@@ -15,7 +15,7 @@ public class DreyfusWagner {
 	static HashMap<String, Integer> keyj = new HashMap<String, Integer>();
 	// static String Disfile =
 	// "E://ScaleFreeNetWork TestData/1000/FixedR/MixedGEdgesDisMatrix.csv";
-	 static String Disfile ="E://ScaleFreeNetwork TestData/Compare/100/EdgeDisMatrix.csv";
+	 static String Disfile ="/home/lee/biolg/ScaleFreeNetwork TestData/Compare/100/EdgeDisMatrix.csv";
 // 	 static String Disfile = "D://For Cluster/test.csv";
 //	 static String Disfile ="E://ScaleFreeNetwork TestData/HierarchyClustering/Clusters/199/43/disMatrix.csv";
 	 static ShortestPathResult spr = new ShortestPathResult();
@@ -350,7 +350,7 @@ public class DreyfusWagner {
 	}
 	public static void main(String[] args) {
 		DreyfusWagner st = new DreyfusWagner();
-		double[][] adj = spr.ReadAdjMatrix("E://ScaleFreeNetwork TestData/Compare/100/AdjMatrix.csv",jkey,keyj);
+		double[][] adj = spr.ReadAdjMatrix("/home/lee/biolg/ScaleFreeNetwork TestData/Compare/100/AdjMatrix.csv",jkey,keyj);
 		double[][] Dis = st.getMixedGraphDistanceMatrixFromFile1(Disfile);
 		// double[][] Dis =
 		// st.getMixedGraphDistanceMatrixFromFile("D://For Cluster/Testdata6/AllEdgeDisMatrix.csv");

@@ -120,8 +120,8 @@ public class STResult {
 		// "E://ScaleFreeNetwork TestData/experiment/20/Edges.csv",
 		// "E://ScaleFreeNetwork TestData/experiment/20/ikey.csv","E://ScaleFreeNetwork TestData/experiment/20/PageRank.csv",
 		// 1);
-		String Disfile = "E://ScaleFreeNetwork TestData/experiment/test/13EdgeDisMatrix.csv";
-		String Adjfile = "E://ScaleFreeNetwork TestData/experiment/test/12AdjcentMatrix.csv";
+		String Disfile = "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/13EdgeDisMatrix.csv";
+		String Adjfile = "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/12AdjcentMatrix.csv";
 		ArrayList<String> keys = new ArrayList<String>();
  
 		keys.add("瞿颖");

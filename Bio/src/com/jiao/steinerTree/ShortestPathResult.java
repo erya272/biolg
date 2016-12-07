@@ -327,7 +327,7 @@ public class ShortestPathResult {
 
 		HashMap<Integer, String> jkey = new HashMap<Integer, String>();
 		HashMap<String, Integer> keyj = new HashMap<String, Integer>();
-		String adjfr ="E://ScaleFreeNetwork TestData/experiment/test/12AdjcentMatrix.csv";
+		String adjfr ="/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/12AdjcentMatrix.csv";
 		ArrayList<String> keys = new ArrayList<String>();
 		keys.add("瞿颖");
 		keys.add("窦唯");

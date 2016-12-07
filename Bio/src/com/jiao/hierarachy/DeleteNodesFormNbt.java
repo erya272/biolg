@@ -7,7 +7,7 @@ import com.jiao.file.FileReadAndWrite;
 public class DeleteNodesFormNbt {
 	static FileReadAndWrite fraw = new FileReadAndWrite();
 	static IndexForHierarchyTree inf = new IndexForHierarchyTree();
-	static String fpath = "E://ScaleFreeNetwork TestData/";
+	static String fpath = "/home/lee/biolg/ScaleFreeNetwork TestData/";
 	public void GenerateGeneEdgesAccordingNexoTree(String soufr, String tarfr,String nw,String er){
 		ArrayList<String> read  = fraw.ReadData(soufr);
 		ArrayList<String> oread = fraw.ReadData(tarfr);

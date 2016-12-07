@@ -41,6 +41,7 @@ public class ForEdgeTypeGephi {
  }
  public static void main(String []args) throws IOException{
 	 ForEdgeTypeGephi fe = new ForEdgeTypeGephi();
-	 fe.TypeGephi("E://ScaleFreeNetwork TestData/experiment/test/11Edges.csv", "E://ScaleFreeNetwork TestData/experiment/test/11EdgesGeiph.csv");
+	 fe.TypeGephi("/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/11Edges.csv", 
+			 "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/11EdgesGeiph.csv");
  }
 }

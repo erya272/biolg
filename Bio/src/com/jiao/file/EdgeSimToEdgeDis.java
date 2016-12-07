@@ -19,7 +19,7 @@ public class EdgeSimToEdgeDis {
 	public static void main(String[] args) {
 		
 		EdgeSimToEdgeDis ete = new EdgeSimToEdgeDis();
-		ete.EdgeSimilarityToEdgeDis("E://ScaleFreeNetwork TestData/experiment/20/Edges.csv", "E://ScaleFreeNetwork TestData/experiment/20/EdgeDis.csv");
+		ete.EdgeSimilarityToEdgeDis("/home/lee/biolg/ScaleFreeNetwork TestData/experiment/20/Edges.csv", "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/20/EdgeDis.csv");
 	}
 
 }

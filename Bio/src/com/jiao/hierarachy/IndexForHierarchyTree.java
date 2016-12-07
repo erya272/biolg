@@ -21,7 +21,7 @@ public class IndexForHierarchyTree {
 	static FileReadAndWrite fraw = new FileReadAndWrite();
 	BTree root = new BTree();
 	BTree rootr = new BTree();// 就是找到的那個要插入的點
-	static String fr = "E://ScaleFreeNetwork TestData/no weight/100/finalHac2.csv";
+	static String fr = "/home/lee/biolg/ScaleFreeNetwork TestData/no weight/100/finalHac2.csv";
 	HashMap<String, ArrayList<String>> cleaf = new HashMap<String, ArrayList<String>>();
 	static int n = 0;
 	static ArrayList<String> Kroot = new ArrayList<String>();

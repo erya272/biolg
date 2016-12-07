@@ -25,9 +25,9 @@ public class HierarchyMapSerializable implements Serializable{
 //    static String fr = "/home/ajiao/nbt/finalHac2.csv";
 //    static String fr1 = "/home/ajiao/nbt/Leaf.dat";//on is true
 //    static String fr2path = "/home/ajiao/nbt/Cutoff/";//on is false
-    static String fr = "E://ScaleFreeNetwork TestData/snbt/finalHac2.csv";
-    static String fr1 = "E://ScaleFreeNetwork TestData/snbt/Leaf.dat";//on is true
-    static String fr2path = "E://ScaleFreeNetwork TestData/snbt/Cutoff/";//on is false
+    static String fr = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/finalHac2.csv";
+    static String fr1 = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/Leaf.dat";//on is true
+    static String fr2path = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/Cutoff/";//on is false
     static DirMaker mdir = new DirMaker();
     
     static int dis = 50;

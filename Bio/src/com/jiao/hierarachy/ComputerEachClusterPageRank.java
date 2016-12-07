@@ -141,7 +141,7 @@ public class ComputerEachClusterPageRank {
 		return map;	
 	}
 	public static void main(String[] args) {
-		String basepath = "E://ScaleFreeNetwork TestData/nnbt/";
+		String basepath = "/home/lee/biolg/ScaleFreeNetwork TestData/nnbt/";
 		ComputerEachClusterPageRank cep = new ComputerEachClusterPageRank(
 				basepath);
 		HashMap<String, ArrayList<String>> entleaf = cep.ms1.ent;

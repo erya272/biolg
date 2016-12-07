@@ -132,9 +132,9 @@ public class EdgeToAdjcentMatrix {
 	public static void main(String[] args) throws IOException{
 		EdgeToAdjcentMatrix etam =new EdgeToAdjcentMatrix();
 		
-		String frn = "E://ScaleFreeNetwork TestData/experiment/test/13EdgeDisMatrix.csv";
-		String fre = "E://ScaleFreeNetwork TestData/experiment/test/12Edges.csv";
-		String frm = "E://ScaleFreeNetwork TestData/experiment/test/12AdjcentMatrix.csv";
+		String frn = "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/13EdgeDisMatrix.csv";
+		String fre = "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/12Edges.csv";
+		String frm = "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/12AdjcentMatrix.csv";
 		etam.GenerateMatrixByDisMatrix(frn, fre, frm);
 		
 //		directedmatrix

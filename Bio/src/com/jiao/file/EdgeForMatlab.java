@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class EdgeForMatlab {
 
 	static FileReadAndWrite fraw = new FileReadAndWrite();
-	static String path ="E://ScaleFreeNetwork TestData/spectral clustering/";
+	static String path ="/home/lee/biolg/ScaleFreeNetwork TestData/spectral clustering/";
 	public void EdgesCovert(String fr, String  fw){
 		ArrayList<String> edges = fraw.ReadData(fr);
 		for(String s:edges){

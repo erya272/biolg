@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class NbtcsvStandardization {
 	static FileReadAndWrite fraw = new FileReadAndWrite();
-	static String fpath = "E://ScaleFreeNetwork TestData/nnbt/";
+	static String fpath = "/home/lee/biolg/ScaleFreeNetwork TestData/nnbt/";
 
 	public void Processing(String fr,String sfr) {
 		ArrayList<String> read = new ArrayList<String>();

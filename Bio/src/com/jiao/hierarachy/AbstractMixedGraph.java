@@ -312,7 +312,7 @@ public class AbstractMixedGraph {
 	}
 
 	public static void main(String[] args) {
-		String basepath = "E://ScaleFreeNetwork TestData/snbt/";
+		String basepath = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";
 //		String basepath = "E://ScaleFreeNetwork TestData/nbt/";
 		AbstractMixedGraph amg = new AbstractMixedGraph(basepath);
 		String disfr = basepath + "EdgeDisMatrix.csv";

@@ -17,7 +17,7 @@ import com.jiao.serializable.Logger;
 public class PRSerializable implements Serializable{
 	//每个cluster的内部PageRank值；
 //	static String basepath = "/home/ajiao/nbt/";
-	static String basepath = "E://ScaleFreeNetwork TestData/snbt/";
+	static String basepath = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";
 	private static final long serialVersionUID = 11L;
 	HashMap<String, ArrayList<String>> ent = new HashMap<String, ArrayList<String>>();
     

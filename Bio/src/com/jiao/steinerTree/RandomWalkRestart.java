@@ -11,7 +11,7 @@ public class RandomWalkRestart {
 	static double a = 0.1;// 阻尼系数
 	static FileReadAndWrite fraw = new FileReadAndWrite();
 	static ShortestPathResult spr = new ShortestPathResult();
-	static String adjfr = "E://ScaleFreeNetwork TestData/experiment/test/11AdjcentMatrix.csv";
+	static String adjfr = "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/test/11AdjcentMatrix.csv";
 	static HashMap<Integer, String> jkey = new HashMap<Integer, String>();
 	static HashMap<String, Integer> keyj = new HashMap<String, Integer>();
 	static double[][] adj = spr.ReadAdjMatrix(adjfr, jkey, keyj);

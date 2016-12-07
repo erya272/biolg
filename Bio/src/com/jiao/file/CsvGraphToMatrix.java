@@ -111,10 +111,11 @@ public class CsvGraphToMatrix {
 
 	public static void main(String[] args) throws IOException {
 		CsvGraphToMatrix cs = new CsvGraphToMatrix();
-		GraphStringOrder gs = cs.readcsv("E://ScaleFreeNetwork TestData/experiment/20/EdgeDis.csv","E://ScaleFreeNetwork TestData/experiment/20/nodes.csv");
+		GraphStringOrder gs = cs.readcsv("/home/lee/biolg/ScaleFreeNetwork TestData/experiment/20/EdgeDis.csv",
+				"/home/lee/biolg/ScaleFreeNetwork TestData/experiment/20/nodes.csv");
 		double[][] gmatrix = new double[958][958];
 		gmatrix = cs.GetMatrix(gs);
-		cs.MatrixTotxt(gmatrix, "E://ScaleFreeNetwork TestData/experiment/20/AdjMatrix.csv");
+		cs.MatrixTotxt(gmatrix, "/home/lee/biolg/ScaleFreeNetwork TestData/experiment/20/AdjMatrix.csv");
 
 	}
 }

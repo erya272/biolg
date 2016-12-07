@@ -8,7 +8,7 @@ import com.jiao.element.KeyAndIndex;
 public class StringToNumberForHac {
 	// 用于后期keyi和ikey序列化，以及把最短路径矩阵中的字符串转换成数字，方便后期的层次聚类
 	static FileReadAndWrite fraw = new FileReadAndWrite();
-	static String fpath = "E://ScaleFreeNetwork TestData/snbt/";
+	static String fpath = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";
 
 	public KeyAndIndex KeyIIKey(String fr) {
 		ArrayList<String> read = fraw.ReadData(fr);

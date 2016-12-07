@@ -692,7 +692,7 @@ public class FindCorrespondingHierarchy {
 	}
 
 	public static void main(String[] args) {
-		String path = "E://ScaleFreeNetwork TestData/snbt/";
+		String path = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";
 		FindCorrespondingHierarchy fch = new FindCorrespondingHierarchy(path);
 		ArrayList<String> keys = new ArrayList<String>();
 		AbstractMixedGraph amg = new AbstractMixedGraph();

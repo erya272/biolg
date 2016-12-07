@@ -7,7 +7,7 @@ import com.jiao.file.FileReadAndWrite;
 public class GeneratorTestData {
 	
 	static FileReadAndWrite fraw = new FileReadAndWrite();
-	static String filepath = "E://ScaleFreeNetwork TestData/no weight/";
+	static String filepath = "/home/lee/biolg/ScaleFreeNetwork TestData/no weight/";
 	public  void TestDataWriten( int n ){
 		
 		ScaleFreeNetwork sf =  new ScaleFreeNetwork();

@@ -8,7 +8,7 @@ import com.jiao.element.KeyAndIndex;
 public class CompleteHACRes {
     //层次聚类结果转换，是离开MATLAB之后的第一步数据处理，Matlab中Z的结果转换成层次的
 	static FileReadAndWrite fraw = new FileReadAndWrite();
-	static String fpath = "E://ScaleFreeNetwork TestData/snbt/";
+	static String fpath = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";
 	static StringToNumberForHac stn =new StringToNumberForHac();
 	public void Convert(String f1, String f2){
 		ArrayList<String> odata =  new ArrayList<String>();
