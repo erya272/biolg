@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="test" extends="struts-default">
+		
+
+	<action name="jumpTo" class="com.biosearch.action.Jump" method="jump">
+		<result name="success">demo.jsp</result>
+	</action>
+	
+</package>
+
+<package name="jsonaction" extends="json-default">
+		
+		
+		<action name="getData222" class="com.biosearch.action.getDataAction" method="ZhuJSONData">
+			<result name="success" type="json"></result>
+		</action>
+		
+</package>
+
+</struts>    
