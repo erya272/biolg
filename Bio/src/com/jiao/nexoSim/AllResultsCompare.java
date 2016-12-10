@@ -32,6 +32,8 @@ public class AllResultsCompare {
 	public void Result(String fr,String resfr) {
 //		System.out.println("here");
 		FindCorrespondingHierarchy fch = new FindCorrespondingHierarchy(spath);
+		erya_threads erya_fch = new erya_threads(spath, "erya_threads....."); 
+		
 		AbstractMixedGraph amg = new AbstractMixedGraph();
 		String disfr = spath + "EdgeDisMatrix.csv";
 		DisMAtrixAndIndex di = amg.ReadInDisMatrix(disfr);
@@ -66,7 +68,7 @@ public class AllResultsCompare {
 			
 			/////
 			i+=1;
-			if (i>10){
+			if (i>5){
 				break;
 			}
 			System.out.println(i + "\t"+key);
@@ -81,10 +83,28 @@ public class AllResultsCompare {
 //			System.out.println(fch.prmap.size());
 //			System.out.println(di.getDis().size());
 			
-			HierarcyBackForFindResults rrrr = fch.CircleFindCluster(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);		
-			
+/*			HierarcyBackForFindResults rrrr = fch.CircleFindCluster(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);		
+//			System.out.println("now:\t\t"+rrrr.getClusterContainKey());
 			cls_num.add(rrrr.getClusterContainKey().size());
-			ran_num.add(rootAndpath.size());
+			ran_num.add(rootAndpath.size());*/
+			
+			
+			
+			threads_data rs = erya_fch.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
+			
+			HashMap<String, ArrayList<String>> map = rs.map;
+			Set<String> set = map.keySet();
+			Iterator<String> it = set.iterator();
+			while (it.hasNext()) {
+				Object key2 = it.next();
+				ArrayList<String> values = (ArrayList<String>) map.get(key2);
+				if (values.size() >= 3) {
+					erya_fch.run(rs.begin,rs. end, values, (String)key2, rs.pr,di.getDis()
+							, rs.keyi, rootAndpath);
+				}
+			}		
+
+			
 			
 //			System.out.println("rootAndpath: "+rootAndpath.size()+" "+rootAndpath);
 			ArrayList<String> all1 = fch.ConstructFinalTree(rootAndpath, di.getDis(), di.getKeyi(),fch.prmap);

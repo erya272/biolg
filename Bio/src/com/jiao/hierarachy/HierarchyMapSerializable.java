@@ -21,7 +21,7 @@ public class HierarchyMapSerializable implements Serializable{
 	 */
 	private static final long serialVersionUID = 11L;
 	//对 叶节点和cutoff的map 进行存储
-    HashMap<String, ArrayList<String>> ent = new HashMap<String, ArrayList<String>>();
+    public HashMap<String, ArrayList<String>> ent = new HashMap<String, ArrayList<String>>();
 //    static String fr = "/home/ajiao/nbt/finalHac2.csv";
 //    static String fr1 = "/home/ajiao/nbt/Leaf.dat";//on is true
 //    static String fr2path = "/home/ajiao/nbt/Cutoff/";//on is false

@@ -19,7 +19,7 @@ public class PRSerializable implements Serializable{
 //	static String basepath = "/home/ajiao/nbt/";
 	static String basepath = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";
 	private static final long serialVersionUID = 11L;
-	HashMap<String, ArrayList<String>> ent = new HashMap<String, ArrayList<String>>();
+	public HashMap<String, ArrayList<String>> ent = new HashMap<String, ArrayList<String>>();
     
 	private static HashMap<String, ArrayList<String>> init() {
 		Logger.debug("load data from db...", PRSerializable.class);
