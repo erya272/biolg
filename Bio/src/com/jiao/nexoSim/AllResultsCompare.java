@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 import com.jiao.element.DisMAtrixAndIndex;
 import com.jiao.element.EvaluationElement;
@@ -73,37 +74,42 @@ public class AllResultsCompare {
 			}
 			System.out.println(i + "\t"+key);
 			
-			long beg = System.currentTimeMillis(); /// // by lee
-			
-			//////
-			
+			long beg = System.currentTimeMillis(); /// // by lee			
 			LinkedHashMap<String, ArrayList<String>> rootAndpath  = new  LinkedHashMap<String, ArrayList<String>>();
 			long startTime1 = System.currentTimeMillis();
-			////
-//			System.out.println(fch.prmap.size());
-//			System.out.println(di.getDis().size());
 			
 /*			HierarcyBackForFindResults rrrr = fch.CircleFindCluster(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);		
 //			System.out.println("now:\t\t"+rrrr.getClusterContainKey());
 			cls_num.add(rrrr.getClusterContainKey().size());
-			ran_num.add(rootAndpath.size());*/
-			
+			ran_num.add(rootAndpath.size());*/			
 			
 			
 			threads_data rs = erya_fch.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
 			
-			HashMap<String, ArrayList<String>> map = rs.map;
-			Set<String> set = map.keySet();
-			Iterator<String> it = set.iterator();
-			while (it.hasNext()) {
-				Object key2 = it.next();
-				ArrayList<String> values = (ArrayList<String>) map.get(key2);
-				if (values.size() >= 3) {
-					erya_fch.run(rs.begin,rs. end, values, (String)key2, rs.pr,di.getDis()
-							, rs.keyi, rootAndpath);
+			while (true){
+				HashMap<String, ArrayList<String>> map = rs.map;
+//				System.out.println( "map:\t"+ map);				
+				Set<String> set = map.keySet();
+				Iterator<String> it = set.iterator();
+				int flg =  0;
+				while (it.hasNext()) {
+					Object key2 = it.next();
+					ArrayList<String> values = (ArrayList<String>) map.get(key2);
+					if (values.size() >= 3) {
+						flg = 1;
+						 rs = erya_fch.run(rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath);
+					}
 				}
-			}		
-
+				if (flg==0){
+					
+					
+					break;
+				}
+			}
+			
+//			cls_num.add(  );
+			ran_num.add(rootAndpath.size());
+			
 			
 			
 //			System.out.println("rootAndpath: "+rootAndpath.size()+" "+rootAndpath);
