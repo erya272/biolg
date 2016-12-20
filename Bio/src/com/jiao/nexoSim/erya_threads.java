@@ -31,14 +31,6 @@ public class erya_threads extends Thread {
 
 	String basepath;
 
-	// static String fr1 = "E://ScaleFreeNetwork TestData/nbt/Leaf.dat";// on
-	// // is
-	// // true
-	// static String path = "E://ScaleFreeNetwork TestData/nbt/Clusters/";
-	// static String fr2path = "E://ScaleFreeNetwork TestData/nbt/Cutoff/";// on
-	// is
-
-	// false
 	String fr1;
 	String path;
 	String fr2path;
@@ -66,10 +58,47 @@ public class erya_threads extends Thread {
 	
 	   private Thread t;
 	   private String threadName;
-
+	   
+	   public int begin;
+	   public int end;
+	   public ArrayList<String> mkw;
+	   public String root;
+	   public HashMap<String, ArrayList<String>> pr;
+	   public ArrayList<String> dis;
+	   public HashMap<String, String> keyi;
+	   public LinkedHashMap<String, ArrayList<String>> rootAndpath;
+	   
+	   	   
 	public erya_threads() {
 	}
-
+	
+	public erya_threads(String path,String name,int begin, int end,
+			ArrayList<String> mkw, String root,
+			HashMap<String, ArrayList<String>> pr, ArrayList<String> dis,
+			HashMap<String, String> keyi,
+			LinkedHashMap<String, ArrayList<String>> rootAndpath) {
+		this.basepath = path;
+		this.fr1 = path + "Leaf.dat";
+		this.path = path + "Clusters/";
+		this.fr2path = path + "Cutoff/";
+		this.ms1 = HierarchyMapSerializable.loadMapData(new File(fr1), true, 1);
+		this.entleaf = this.ms1.ent;
+//		this.N = entleaf.size() + 1;
+		this.prs = PRSerializable.loadMapData(new File(basepath + "PR.dat"));
+		this.prmap = this.prs.ent;
+		this.threadName = name;
+		
+		this.begin =begin;
+		this.end=end;
+		this.mkw=mkw;
+		this.root=root;
+		this.pr=pr;
+		this.dis=dis;
+		this.keyi=keyi;
+		this.rootAndpath=rootAndpath;
+		
+		
+	}
 	public erya_threads(String path,String name) {
 		this.basepath = path;
 		this.fr1 = path + "Leaf.dat";
@@ -574,6 +603,7 @@ public class erya_threads extends Thread {
 		return allPath;
 
 	}
+	
 	public double Cost(ArrayList<String> allPath,ArrayList<String> dis, HashMap<String, String> keyi){
 		double cost =0;
 		for (String s : allPath) {
@@ -657,67 +687,56 @@ public class erya_threads extends Thread {
 			HashMap<String, String> keyi,
 			LinkedHashMap<String, ArrayList<String>> rootAndpath) {
 		// 循环找到对应的层次，并在对应的层次上运行ST
-//		System.out.println("\n");
+		
 		HierarchyMapSerializable ms2 = HierarchyMapSerializable.loadMapData(
 				new File(fr2path + root + ".dat"), true, 1);
 		HashMap<String, ArrayList<String>> entcutoff = ms2.ent;
 		end = entcutoff.size();
 		
-//		System.out.println("end: "+end); //// 100
-		HierarcyBackForFindResults res = BinarySearch(begin, end, mkw, root,entcutoff);
+		HierarcyBackForFindResults res = BinarySearch(begin, end, mkw, root,entcutoff);		
+		HashMap<String, ArrayList<String>> map = res.getClusterContainKey();	
 		
-		long beg = System.currentTimeMillis();				
-				
+		st_data_erya st_data = new st_data_erya(root, pr, dis, keyi, res);
+		
 		ArrayList<String> STres = ApplayDreyfus(res);
-//		System.out.println(System.currentTimeMillis()-beg);
-		System.out.println("STres: -------" + STres + "-------");
-		
-		HashMap<String, ArrayList<String>> map = res.getClusterContainKey();
+		System.out.println("STres: -------" + STres + "-------");		
 		ArrayList<String> path = getHeirarchyPath(pr, map, STres, root, dis,
 				keyi);
 		rootAndpath.put(root, path);
+		
+		
 //		System.out.println("map:\t"+map);
 		
-		threads_data dt = new threads_data(begin, end,  pr,dis,  keyi,map);
+		threads_data dt = new threads_data(begin, end,  pr,dis,  keyi,map,res,st_data);
 		
-		return dt;
-		
-/*		Set<String> set = map.keySet();
-		Iterator<String> it = set.iterator();
-		while (it.hasNext()) {
-			Object key = it.next();
-			ArrayList<String> values = (ArrayList<String>) map.get(key);
-			if (values.size() >= 3) {
-				res = CircleFindCluster(begin, end,    values, (String) key, pr,
-						dis, keyi, rootAndpath);
-			}
-		}
-//		System.out.println("res:\t"+res);
-		return res;*/
-		
-		
+		return dt;	
 	}
 	
+	
+/*	int begin, int end,
+	ArrayList<String> mkw, String root,
+	HashMap<String, ArrayList<String>> pr, ArrayList<String> dis,
+	HashMap<String, String> keyi,
+	LinkedHashMap<String, ArrayList<String>> rootAndpath*/
 	
 	public threads_data run(int begin, int end,
 			ArrayList<String> mkw, String root,
 			HashMap<String, ArrayList<String>> pr, ArrayList<String> dis,
 			HashMap<String, String> keyi,
-			LinkedHashMap<String, ArrayList<String>> rootAndpath){
-		
-	      System.out.println("Running " +  threadName );     
-	      
+			LinkedHashMap<String, ArrayList<String>> rootAndpath){   				
+	      System.out.println("Running " +  threadName );     	      
 	      threads_data ress = CircleFindCluster(begin, end, mkw, root, pr, dis ,keyi, rootAndpath);   
 	      return ress;	     
 	}
 	
 	
-	public void start(){
+	public void  start(){
 //	      System.out.println("Starting " +  threadName );
 	      if (t == null) {
 	         t = new Thread (this, threadName);
 	         t.start ();
 	      }
+//	      return ress;
 	}	
 	
 	

@@ -1,5 +1,6 @@
 package com.jiao.nexoSim;
 
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -33,7 +34,8 @@ public class AllResultsCompare {
 	public void Result(String fr,String resfr) {
 //		System.out.println("here");
 		FindCorrespondingHierarchy fch = new FindCorrespondingHierarchy(spath);
-		erya_threads erya_fch = new erya_threads(spath, "erya_threads....."); 
+//		erya_threads erya_fch = new erya_threads(spath, "erya_threads....."); 
+		erya_searchTree  erya_st = new erya_searchTree("eyra_searchTree....");
 		
 		AbstractMixedGraph amg = new AbstractMixedGraph();
 		String disfr = spath + "EdgeDisMatrix.csv";
@@ -78,13 +80,23 @@ public class AllResultsCompare {
 			LinkedHashMap<String, ArrayList<String>> rootAndpath  = new  LinkedHashMap<String, ArrayList<String>>();
 			long startTime1 = System.currentTimeMillis();
 			
+			/*       					old way, single thread			         */
 /*			HierarcyBackForFindResults rrrr = fch.CircleFindCluster(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);		
 //			System.out.println("now:\t\t"+rrrr.getClusterContainKey());
 			cls_num.add(rrrr.getClusterContainKey().size());
-			ran_num.add(rootAndpath.size());*/			
+			ran_num.add(rootAndpath.size());			*/
+			
+//				////////        		my new way, do it in many threads      				   ///////////
+			ArrayList<st_data_erya>   st_data  = new ArrayList<st_data_erya>(); 
 			
 			
-			threads_data rs = erya_fch.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
+//			threads_data rs = erya_fch.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
+			
+			erya_threads ef0 = new erya_threads(spath, "erya_threads.....",1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
+			threads_data rs = ef0.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
+			
+			
+			st_data.add(rs.st_data);
 			
 			while (true){
 				HashMap<String, ArrayList<String>> map = rs.map;
@@ -97,19 +109,30 @@ public class AllResultsCompare {
 					ArrayList<String> values = (ArrayList<String>) map.get(key2);
 					if (values.size() >= 3) {
 						flg = 1;
-						 rs = erya_fch.run(rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath);
+//						 rs = erya_fch.run(rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath);
+						erya_threads ef1 = new erya_threads(spath, "erya_threads.....",rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath); 
+						rs = ef1.run(rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath);				 
+						 
+						 st_data.add(rs.st_data);
 					}
 				}
 				if (flg==0){
-					
-					
+					cls_num.add( map.size() );					
 					break;
 				}
-			}
+			}			
+/*				
+			System.out.println(" Steiner tree number is  "+st_data.size());
+			for (int i1 = 0;i1<st_data.size();i1++){
+				st_data_erya data = st_data.get(i1);
+				erya_st.run(data.root,data. pr,data. dis, data.keyi, data.res, rootAndpath);			
+				
+			}*/
 			
 //			cls_num.add(  );
 			ran_num.add(rootAndpath.size());
 			
+//			////////        		my new way, do it in many threads      				   ///////////
 			
 			
 //			System.out.println("rootAndpath: "+rootAndpath.size()+" "+rootAndpath);
@@ -133,7 +156,7 @@ public class AllResultsCompare {
 				double sim =sim1.get(s);
 				fraw.WriteToFile(resfr+"AllSimlarity.csv", s+":"+sim);
 			}
-			System.out.println(System.currentTimeMillis()-beg + " ms");
+			System.out.println(System.currentTimeMillis()-beg + " ms\n");
 			
 			
 //			//ST
@@ -233,7 +256,10 @@ public class AllResultsCompare {
 
 	}
 	public static void main(String[] args){
+		long tm1 = System.currentTimeMillis();
 		AllResultsCompare arc = new AllResultsCompare();
 		arc.Result(path+"set_one.csv",path+"result/ST/set_one/");		
+		System.out.println( "\n\nRunning for "+(System.currentTimeMillis()-tm1) +" ms!!!"   );
+		
 	}
 }

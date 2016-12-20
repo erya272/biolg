@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
+import com.jiao.hierarachy.HierarcyBackForFindResults;
+
 public class threads_data {
 	
 	public int begin;
@@ -14,6 +16,8 @@ public class threads_data {
 	public ArrayList<String> dis;
 	public HashMap<String, String> keyi;
 	public HashMap<String, ArrayList<String>> map ;
+	public HierarcyBackForFindResults res;
+	public st_data_erya st_data;
 //	public LinkedHashMap<String, ArrayList<String>> rootAndpath;	
 	
 	public threads_data(int begin, int end,
@@ -21,7 +25,9 @@ public class threads_data {
 			HashMap<String, ArrayList<String>> pr,
 			ArrayList<String> dis,
 			HashMap<String, String> keyi,
-			HashMap<String, ArrayList<String>> map 
+			HashMap<String, ArrayList<String>> map,
+			HierarcyBackForFindResults res,
+			st_data_erya st_data
 //			LinkedHashMap<String, ArrayList<String>> rootAndpath
 			) {
 		// TODO Auto-generated constructor stub
@@ -33,6 +39,8 @@ public class threads_data {
 		this.dis = dis;
 		this.keyi = keyi;
 		this.map = map;
+		this.res = res;
+		this.st_data=st_data;
 //		this.rootAndpath = rootAndpath;
 	}
 
