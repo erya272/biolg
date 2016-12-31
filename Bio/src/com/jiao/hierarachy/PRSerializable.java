@@ -22,7 +22,7 @@ public class PRSerializable implements Serializable{
 	public HashMap<String, ArrayList<String>> ent = new HashMap<String, ArrayList<String>>();
     
 	private static HashMap<String, ArrayList<String>> init() {
-		Logger.debug("load data from db...", PRSerializable.class);
+//		Logger.debug("load data from db...", PRSerializable.class);
 		ComputerEachClusterPageRank cep = new ComputerEachClusterPageRank(
 				basepath);
 		HashMap<String, ArrayList<String>> entleaf = cep.ms1.ent;
@@ -52,12 +52,12 @@ public class PRSerializable implements Serializable{
 	
 	public static PRSerializable loadMapData(File file) {
 		long startTime = new Date().getTime();
-		Logger.debug("load map data from file...", PRSerializable.class);
+//		Logger.debug("load map data from file...", PRSerializable.class);
 		if(file != null){
 			if(!file.exists()){
-				Logger.debug("can not find map data file...", PRSerializable.class);				
+//				Logger.debug("can not find map data file...", PRSerializable.class);				
 				PRSerializable map = new PRSerializable();
-				Logger.debug("save map data to file...", PRSerializable.class);
+//				Logger.debug("save map data to file...", PRSerializable.class);
 				saveMapData(file, map);
 			}
 			ObjectInputStream is = null;
@@ -65,7 +65,7 @@ public class PRSerializable implements Serializable{
 				is = new ObjectInputStream(new FileInputStream(file));
 				PRSerializable ob = (PRSerializable) is.readObject();
 				long endTime = new Date().getTime();
-				System.out.println("载入所有点耗费时间" + (endTime - startTime) + " ms!");
+//				System.out.println("载入所有点耗费时间" + (endTime - startTime) + " ms!");
 				return ob;
 				
 			} catch (ClassNotFoundException e) {

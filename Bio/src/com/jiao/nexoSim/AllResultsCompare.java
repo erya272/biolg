@@ -26,7 +26,7 @@ public class AllResultsCompare {
 	//SP,ST,CST三个算法的所有结果的对比实验
 	public static String path =  "/home/lee/biolg/ScaleFreeNetwork TestData/keys/" ;        //  "E://ScaleFreeNetwork TestData/keys/";
 	static FileReadAndWrite fraw = new FileReadAndWrite();
-	String Disfile =         "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/EdgeDisMatrix.csv"; // "E://ScaleFreeNetwork TestData/snbt/EdgeDisMatrix.csv";
+	String Disfile = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/EdgeDisMatrix.csv"; // "E://ScaleFreeNetwork TestData/snbt/EdgeDisMatrix.csv";
 	String Adjfile = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/AdjcentMatrix.csv";  // "E://ScaleFreeNetwork TestData/snbt/AdjcentMatrix.csv"; 
 	String spath = "/home/lee/biolg/ScaleFreeNetwork TestData/snbt/";   ////  "E://ScaleFreeNetwork TestData/snbt/";
 	ComputeSim cs =new ComputeSim();
@@ -35,7 +35,7 @@ public class AllResultsCompare {
 //		System.out.println("here");
 		FindCorrespondingHierarchy fch = new FindCorrespondingHierarchy(spath);
 //		erya_threads erya_fch = new erya_threads(spath, "erya_threads....."); 
-		erya_searchTree  erya_st = new erya_searchTree("eyra_searchTree....");
+//		erya_searchTree  erya_st = new erya_searchTree("eyra_searchTree....");
 		
 		AbstractMixedGraph amg = new AbstractMixedGraph();
 		String disfr = spath + "EdgeDisMatrix.csv";
@@ -71,9 +71,9 @@ public class AllResultsCompare {
 			
 			/////
 			i+=1;
-			if (i>5){
-				break;
-			}
+//			if (i>5){
+//				break;
+//			}
 			System.out.println(i + "\t"+key);
 			
 			long beg = System.currentTimeMillis(); /// // by lee			
@@ -81,60 +81,11 @@ public class AllResultsCompare {
 			long startTime1 = System.currentTimeMillis();
 			
 			/*       					old way, single thread			         */
-/*			HierarcyBackForFindResults rrrr = fch.CircleFindCluster(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);		
+			HierarcyBackForFindResults rrrr = fch.CircleFindCluster(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);		
 //			System.out.println("now:\t\t"+rrrr.getClusterContainKey());
 			cls_num.add(rrrr.getClusterContainKey().size());
-			ran_num.add(rootAndpath.size());			*/
-			
-//				////////        		my new way, do it in many threads      				   ///////////
-			ArrayList<st_data_erya>   st_data  = new ArrayList<st_data_erya>(); 
-			
-			
-//			threads_data rs = erya_fch.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
-			
-			erya_threads ef0 = new erya_threads(spath, "erya_threads.....",1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
-			threads_data rs = ef0.run(1, 100, key, "9973", fch.prmap, di.getDis(),di.getKeyi(),rootAndpath);
-			
-			
-			st_data.add(rs.st_data);
-			
-			while (true){
-				HashMap<String, ArrayList<String>> map = rs.map;
-//				System.out.println( "map:\t"+ map);				
-				Set<String> set = map.keySet();
-				Iterator<String> it = set.iterator();
-				int flg =  0;
-				while (it.hasNext()) {
-					Object key2 = it.next();
-					ArrayList<String> values = (ArrayList<String>) map.get(key2);
-					if (values.size() >= 3) {
-						flg = 1;
-//						 rs = erya_fch.run(rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath);
-						erya_threads ef1 = new erya_threads(spath, "erya_threads.....",rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath); 
-						rs = ef1.run(rs.begin,rs. end, values, (String)key2, rs.pr, rs.dis, rs.keyi, rootAndpath);				 
-						 
-						 st_data.add(rs.st_data);
-					}
-				}
-				if (flg==0){
-					cls_num.add( map.size() );					
-					break;
-				}
-			}			
-/*				
-			System.out.println(" Steiner tree number is  "+st_data.size());
-			for (int i1 = 0;i1<st_data.size();i1++){
-				st_data_erya data = st_data.get(i1);
-				erya_st.run(data.root,data. pr,data. dis, data.keyi, data.res, rootAndpath);			
-				
-			}*/
-			
-//			cls_num.add(  );
-			ran_num.add(rootAndpath.size());
-			
-//			////////        		my new way, do it in many threads      				   ///////////
-			
-			
+			ran_num.add(rootAndpath.size());		
+					
 //			System.out.println("rootAndpath: "+rootAndpath.size()+" "+rootAndpath);
 			ArrayList<String> all1 = fch.ConstructFinalTree(rootAndpath, di.getDis(), di.getKeyi(),fch.prmap);
 			

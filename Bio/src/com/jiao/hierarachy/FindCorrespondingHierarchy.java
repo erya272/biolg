@@ -68,6 +68,7 @@ public class FindCorrespondingHierarchy {
 		this.fr2path = path + "Cutoff/";
 		this.ms1 = HierarchyMapSerializable.loadMapData(new File(fr1), true, 1);
 		this.entleaf = this.ms1.ent;
+//		this.ms1.
 //		this.N = entleaf.size() + 1;
 		this.prs = PRSerializable.loadMapData(new File(basepath + "PR.dat"));
 		this.prmap = this.prs.ent;
