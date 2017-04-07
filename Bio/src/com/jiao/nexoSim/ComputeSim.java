@@ -48,7 +48,7 @@ public class ComputeSim {
 	// static HashMap<String, ArrayList<String>> entleaf = ms1.ent;
 	HashMap<String, ArrayList<String>> entleaf;      ////////// every clusters' nodes(keywords set)
 	HashMap<String, Integer> clu_level = new HashMap<>();  /////// every clusters' level in entcutoff (1-100)
-	static HashMap<String, Integer> nls_bykey =  new HashMap<String, Integer>() ; //////// key: keywords, values: 0-4986	
+	public static HashMap<String, Integer> nls_bykey =  new HashMap<String, Integer>() ; //////// key: keywords, values: 0-4986	
 	HashMap<String, ArrayList<String>> entcutoff = new HashMap<String, ArrayList<String>>();  //// tree structure, 100 levels
 	
 	
