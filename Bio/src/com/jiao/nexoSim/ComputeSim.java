@@ -65,7 +65,7 @@ public class ComputeSim {
 		HierarchyMapSerializable ms2 = HierarchyMapSerializable.loadMapData(
 				new File(treepath), true, 1);
 		entcutoff = ms2.ent; /////// tree structure, 100 levels, step by 50 clusters.4987 clusters in all.		
-		System.out.println("encutoff:"+entcutoff.size());
+//		System.out.println("encutoff:"+entcutoff.size());
 
 		this.ms1 = HierarchyMapSerializable.loadMapData(new File(fr1), true, 1);
 		this.entleaf = this.ms1.ent;   							////////// every clusters' nodes(keywords set)
@@ -83,7 +83,6 @@ public class ComputeSim {
 			}
 		}
 		
-		
 //		System.out.println("nodesList:"+nodesList.size());
 //		System.out.println(nodesList.get(1)+nodesList.get(2)+nodesList.get(3));
 		
@@ -96,7 +95,7 @@ public class ComputeSim {
 		
 		for (int i=1;i<101;i++){
 			ArrayList<String> arrayList = entcutoff.get(i+"");
-//			System.out.println(i+"\t"+arrayList.size());
+//			System.out.println(i+"\t"+arrayList.size()); 
 			for (String s : arrayList){
 				try{
 					ArrayList<String> sss = entleaf.get(s);
@@ -114,7 +113,7 @@ public class ComputeSim {
 			}			
 		}		
 		
-//		System.out.println("over!!!");
+//		System.out.println("over!!!"); 
 		return comfh;
 	}
 	
@@ -137,7 +136,7 @@ public class ComputeSim {
 			}
 		}
 		
-		System.out.println("keys:"+keys);
+//		System.out.println("keys:"+keys);
 //		System.out.println(part_matrix);
 		HashSet<Integer> set = new HashSet<>();
 //		System.out.println("Local matrix:");
@@ -191,7 +190,7 @@ public class ComputeSim {
 //		int[] res = new int[clust.size()];
 		HashMap<String, ArrayList<String>> clu2keys = new HashMap<>();
 		
-		System.out.println(clust);
+//		System.out.println(clust);
 		for (ArrayList<Integer> aaa:clust){
 			ArrayList<String> part_keys = new ArrayList<>();
 			int level = 100;
@@ -230,12 +229,13 @@ public class ComputeSim {
 			}			
 		}
 		System.out.println(clu2keys);	
+		//cluster number,  cluster's including keys,  cluster's nodes
 		for (java.util.Map.Entry<String, ArrayList<String>> entry : clu2keys.entrySet()){
 			System.out.println(entry.getKey()+"\t"+ entry.getValue()+"\t" +  entleaf.get(entry.getKey()) );			
 		}	
 		//////////////////////////       the cluster is so small, could it get the steiner tree ?       //////////////////////////
 		
-		System.out.println("over!!!");
+//		System.out.println("over!!!");
 		return clu2keys;
 	}
 	
@@ -259,7 +259,8 @@ public class ComputeSim {
 		for (String s:  clusters){
 			if (isInteger(s)==true){
 				if (entleaf.get(s).contains(onekey)){
-//					System.out.println(string+" "+entleaf.get(string));
+					// cluster number, cluster's nodes;    father cluster number, father cluster's nodes
+					System.out.println(string+" "+entleaf.get(string)+"\t"+s+" "+entleaf.get(s));
 //					System.out.println(s+" "+entleaf.get(s));
 					return s;
 				}

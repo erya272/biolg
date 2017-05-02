@@ -3,7 +3,6 @@
   <groupId>Biolg</groupId>
   <artifactId>Bio</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
