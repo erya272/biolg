@@ -3,25 +3,16 @@ package com.jiao.nexoSim;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.security.KeyStore.Entry;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Set;
 import java.util.regex.Pattern;
 
-import javax.sound.sampled.Line;
-
-import org.apache.lucene.analysis.util.CharArrayMap.EntrySet;
-import org.junit.experimental.theories.Theories;
-//import org.apache.lucene.util.automaton.SortedIntSet.FrozenIntSet;
-import org.slf4j.impl.StaticLoggerBinder;
 
 import com.jiao.hierarachy.HierarchyMapSerializable;
 
-import net.sf.json.filters.AndPropertyFilter;
 
 
 public class ComputeSim {
@@ -46,7 +37,7 @@ public class ComputeSim {
 	
 	HierarchyMapSerializable ms1; 
 	// static HashMap<String, ArrayList<String>> entleaf = ms1.ent;
-	HashMap<String, ArrayList<String>> entleaf;      ////////// every clusters' nodes(keywords set)
+	public HashMap<String, ArrayList<String>> entleaf;      ////////// every clusters' nodes(keywords set)
 	HashMap<String, Integer> clu_level = new HashMap<>();  /////// every clusters' level in entcutoff (1-100)
 	public static HashMap<String, Integer> nls_bykey =  new HashMap<String, Integer>() ; //////// key: keywords, values: 0-4986	
 	HashMap<String, ArrayList<String>> entcutoff = new HashMap<String, ArrayList<String>>();  //// tree structure, 100 levels
