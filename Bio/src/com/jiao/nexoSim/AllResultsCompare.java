@@ -63,7 +63,6 @@ public class AllResultsCompare {
 		ArrayList<Integer> ran_num = new ArrayList<Integer>();
 		
 		for(ArrayList<String> key :allkeys){
-			if(allkeys.indexOf(key) >=27){
 //				System.out.println("key: "+key.size()+" "+key.getClass().toString()+" "+i+" "+key);
 			fraw.WriteToFile(resfr+"keys.csv","keys-----:"+ key.toString());
 //			//CST
@@ -71,9 +70,9 @@ public class AllResultsCompare {
 			
 			/////
 			i+=1;
-//			if (i>5){
-//				break;
-//			}
+			if (i>5){
+				break;
+			}
 			System.out.println(i + "\t"+key);
 			
 			long beg = System.currentTimeMillis(); /// // by lee			
@@ -86,6 +85,14 @@ public class AllResultsCompare {
 			cls_num.add(rrrr.getClusterContainKey().size());
 			ran_num.add(rootAndpath.size());		
 					
+/*			Iterator iterator = rootAndpath.entrySet().iterator();
+			System.out.println("rootandpath:");
+			while (iterator.hasNext()){
+				System.out.println(iterator.next());
+			}
+			System.out.println(" end!  " );*/
+			
+			
 //			System.out.println("rootAndpath: "+rootAndpath.size()+" "+rootAndpath);
 			ArrayList<String> all1 = fch.ConstructFinalTree(rootAndpath, di.getDis(), di.getKeyi(),fch.prmap);
 			
@@ -155,7 +162,6 @@ public class AllResultsCompare {
 //			}
 			
 			
-			}
 		}
 		System.out.println(cls_num+" "+ran_num + "\nfinished!!!");
 

@@ -10,8 +10,11 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.regex.Pattern;
 
+import org.apache.hadoop.hive.ql.parse.HiveParser_IdentifiersParser.intervalLiteral_return;
 
 import com.jiao.hierarachy.HierarchyMapSerializable;
+
+import scala.Tuple2;
 
 
 
@@ -38,7 +41,7 @@ public class ComputeSim {
 	HierarchyMapSerializable ms1; 
 	// static HashMap<String, ArrayList<String>> entleaf = ms1.ent;
 	public HashMap<String, ArrayList<String>> entleaf;      ////////// every clusters' nodes(keywords set)
-	HashMap<String, Integer> clu_level = new HashMap<>();  /////// every clusters' level in entcutoff (1-100)
+	HashMap<String, Integer> clu_level = new HashMap<String, Integer>();  /////// every clusters' level in entcutoff (1-100)
 	public static HashMap<String, Integer> nls_bykey =  new HashMap<String, Integer>() ; //////// key: keywords, values: 0-4986	
 	HashMap<String, ArrayList<String>> entcutoff = new HashMap<String, ArrayList<String>>();  //// tree structure, 100 levels
 	
@@ -47,19 +50,18 @@ public class ComputeSim {
 //	this.path = spath + "Clusters/";
 //	this.fr2path = spath + "Cutoff/";
 
-
+	public int[][] part_matrix ;
+	public int[][] part_mtx_father;
 	
-	public int[][] getMatrix(String datapath)
+	public  Tuple2<int[][], int[][]>  getMatrix(String datapath)      ////////  the lowest common ansester's  level
 	{
-//		System.out.println( "pc:"+pc.size()+"\nrl:"+rl.size()+"\ncp:"+cp.size() );
-
 		HierarchyMapSerializable ms2 = HierarchyMapSerializable.loadMapData(
 				new File(treepath), true, 1);
+		
 		entcutoff = ms2.ent; /////// tree structure, 100 levels, step by 50 clusters.4987 clusters in all.		
 //		System.out.println("encutoff:"+entcutoff.size());
-
 		this.ms1 = HierarchyMapSerializable.loadMapData(new File(fr1), true, 1);
-		this.entleaf = this.ms1.ent;   							////////// every clusters' nodes(keywords set)
+		this.entleaf = this.ms1.ent;   	////////// every clusters' nodes(keywords set)
 		
 		HashMap<Integer, String> nodesList = getNodesList(datapath); //////// key: 0-4986, values: keywords			
 		for (int i=0;i<nodesList.size();i++){
@@ -74,47 +76,55 @@ public class ComputeSim {
 			}
 		}
 		
-//		System.out.println("nodesList:"+nodesList.size());
+//		System.out.println("nodesList:"+nodesList.size()); 
 //		System.out.println(nodesList.get(1)+nodesList.get(2)+nodesList.get(3));
 		
-		int comfh[][]= new int[N][N];
+		int comfh[][]= new int[N][N];		////   level  ////
+		int com_father[][]= new int[N][N];    /////   clusters's number   ////	
+		
 		for(int i=0;i<N;i++){
 			for (int j=0;j<N;j++){
 				comfh[i][j]=1;
 			}
 		}
 		
+		int numb =0;
 		for (int i=1;i<101;i++){
 			ArrayList<String> arrayList = entcutoff.get(i+"");
 //			System.out.println(i+"\t"+arrayList.size()); 
 			for (String s : arrayList){
+/*				if (isInteger(s)==false){
+					comfh[nls_bykey.get(s)][nls_bykey.get(s)] = i;
+				}	*/
 				try{
 					ArrayList<String> sss = entleaf.get(s);
 					for (String a:sss){
 						for (String b:sss){
 							if (!a.equals(b)){
 								comfh[nls_bykey.get(a)][nls_bykey.get(b)] = comfh[nls_bykey.get(b)][nls_bykey.get(a)] = i;
+								com_father[nls_bykey.get(a)][nls_bykey.get(b)] = com_father[nls_bykey.get(b)][nls_bykey.get(a)] = (int) Integer.valueOf(s) ;
 							}
 						}
-					}	
+					}
 				}catch (Exception e) {
 					// TODO: handle exception
 					continue;
 				}		
 			}			
-		}		
-		
-//		System.out.println("over!!!"); 
-		return comfh;
+		}				
+//		return comfh;
+//		System.out.println(numb+" not in 100 level! "+nls_bykey.size());
+		return new  Tuple2<int[][], int[][]>(comfh, com_father);
 	}
 	
-	public HashMap<String, ArrayList<String>> getSubGraphList(ArrayList<String> keys,int[][] matrix,HashMap<String, Integer> numByKey){
-		int len = keys.size(); 
-		
-//		int[] res = new int[len]; /////////////  the size is not sure
-		HashMap<String, Integer> key2num = new HashMap<>(); //// keys, 1 - len
-		HashMap<Integer, String> num2key = new HashMap<>(); /// 0 - len-1 , keys
-		int[][] part_matrix =  new int[len][len];
+	public HashMap<String, ArrayList<String>> getSubGraphList(ArrayList<String> keys,int[][] matrix, int[][] mtx_co_father,HashMap<String, Integer> numByKey){
+		///////// parameters:    keys list,   common ansester's lowest level matrix,   nodes to index transform list.
+		int len = keys.size(); 	
+		///////   keys to index , transform   //////////
+		HashMap<String, Integer> key2num = new HashMap<String, Integer>(); //// keys, 1 - len
+		HashMap<Integer, String> num2key = new HashMap<Integer, String>(); /// 0 - len-1 , keys
+		part_matrix =  new int[len][len];    ///////     the lowest common ancestor's  level    ////////  
+		part_mtx_father = new int[len][len];  ///////     the lowest common ancestor's  cluster number    ///////
 		
 		int i=0;
 		for (String ss:keys){
@@ -124,11 +134,11 @@ public class ComputeSim {
 		for (String ss:keys){
 			for (String bb:keys){
 				part_matrix[key2num.get(ss)][key2num.get(bb)] = matrix[numByKey.get(ss)][numByKey.get(bb)];
+				part_mtx_father[key2num.get(ss)][key2num.get(bb)] = mtx_co_father[numByKey.get(ss)][numByKey.get(bb)];
 			}
 		}
 		
 //		System.out.println("keys:"+keys);
-//		System.out.println(part_matrix);
 		HashSet<Integer> set = new HashSet<>();
 //		System.out.println("Local matrix:");
 		for ( i=0;i<keys.size();i++){
@@ -140,9 +150,9 @@ public class ComputeSim {
 		}		
 //		Object vList = (Object)set.toArray();
 //		System.out.println(vList);
-		ArrayList<Integer> vlList = new ArrayList<>();
+		ArrayList<Integer> vlList = new ArrayList<>();   ///////    all levels which include common ansester   ///////
 		vlList.addAll(set);
-		vlList.sort(null);
+		vlList.sort(null); /////   sort increasing  /////
 //		System.out.println(vlList);
 		
 		HashSet<ArrayList<Integer>> clust = new HashSet<>();
@@ -209,7 +219,7 @@ public class ComputeSim {
 					}					
 				}				
 			}
-			ArrayList<String> clusters = entcutoff.get(level+"");
+			ArrayList<String> clusters = entcutoff.get(level+"");  //////////   get all clusters on this level   ///////
 //			System.out.println(clusters.size()+" "+clusters.contains(onekey));
 			for (String string :clusters){
 				if (isInteger(string)==true){
@@ -266,6 +276,9 @@ public class ComputeSim {
 		 return pattern.matcher(str).matches();    
 	}  
 	
+	 /////////////////////////////     above by me     /////////////////////////////////////////
+	 
+	 
 	public HashMap<Integer, String> getNodesList(String ph){
 		HashMap<Integer, String> res = new  HashMap<Integer, String>();
 		try{
@@ -384,8 +397,13 @@ public class ComputeSim {
 		 
 		 
 //		 cs.getMatrix(par_children, rl, cp);
-		 int[][] matrix = cs.getMatrix(spath+"nodes_sorted.csv");
-		 HashMap<String, ArrayList<String>> subgra = cs.getSubGraphList(keys, matrix, nls_bykey );
+//		 int[][] matrix = cs.getMatrix(spath+"nodes_sorted.csv");
+		 Tuple2<int[][], int[][]> ma2 = cs.getMatrix(spath+"nodes_sorted.csv");
+		 int[][] matrix = ma2._1;     ////////   level ,lowest common ansester's  level   //////// 
+		 int[][] mat_father = ma2._2;     ////////   cluster number ,lowest common ansester's  cluster number  ////////
+		 
+		 
+		 HashMap<String, ArrayList<String>> subgra = cs.getSubGraphList(keys, matrix, mat_father.clone(), nls_bykey );
 		 for (java.util.Map.Entry<String, ArrayList<String>> entry : subgra.entrySet()){
 			 cs.getCluFather(entry.getKey(),matrix);
 		 }

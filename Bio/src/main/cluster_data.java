@@ -1,8 +1,8 @@
 package main;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-
-public class cluster_data {
+public class cluster_data implements Serializable {
 	
 	int dis[][];
 	ArrayList<String> nodes = new ArrayList<String>();
@@ -11,6 +11,7 @@ public class cluster_data {
 		this.dis=dis;
 		this.nodes=nodes;
 	}
+
 	
 	public void setDis(int dis[][]){
 		this.dis = dis;
