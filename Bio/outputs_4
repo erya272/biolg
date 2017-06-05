@@ -1,0 +1,1110 @@
+com.jiao.nexoSim.TreeSerializable: load map data from file...
+com.jiao.nexoSim.TreeSerializable: load map data from file...
+4986  size entleaf
+root:9924 4606
+time:17206 ms! 0
+all keys size: 100
+
+
+num: 0	keys: [YPR162C, YJL194W, YML065W, YDL042C, YKL035W, YMR267W, YCR004C, YPR114W, YCR020C, YBR300C, YPR122W, YDL110C, YMR202W, YNL280C, YGL001C, YHR190W, YCR073W-A, YKL006C-A, YOR075W, YGL098W]
+clusters:
+{6186=[YPR162C, YJL194W, YML065W], 8594=[YBR300C, YPR122W], 6808=[YKL035W], 9755=[YDL042C, YCR004C], 5366=[YPR114W], 7018=[YMR267W], 7436=[YCR073W-A], 8494=[YCR020C, YDL110C], 5527=[YHR190W], 9619=[YKL006C-A, YOR075W, YGL098W], 5370=[YMR202W, YNL280C, YGL001C]}
+just 1 key, return.............
+time for local   running : 12
+just 1 key, return.............
+time for local   running : 15
+just 1 key, return.............
+time for local   running : 33
+time for local   running : 56
+time for local   running : 19
+just 1 key, return.............
+time for local   running : 79
+time for local   running : 19
+time for local   running : 590
+time for local   running : 79
+time for local   running : 25943
+just 1 key, return.............
+time for local   running : 10
+clu_stru:	{7425=[], 9924=[7425, 6277, 7436, 6284, 5071, 9873, 8594, 9619, 6997, 5527, 6808, 6873, 9755, 5020, 9822, 5089, 5732, 6186, 7018, 8494, 5168, 7665, 6260, 5366, 5370], 6277=[], 7436=[], 6284=[], 5071=[], 9873=[5089, 7425, 6186, 6284, 5071, 5168, 7665, 9619, 6260, 6997, 5366, 5527, 6808, 5370, 9755, 5020, 9822], 8594=[6277], 9619=[6260, 6997, 5020], 6997=[5020], 5527=[], 6808=[], 6873=[], 9755=[7425, 6284], 5020=[], 9822=[5168, 5089, 7425, 7665, 5527, 6808, 6186, 5370, 9755, 6284, 5071], 5089=[], 5732=[], 6186=[5071], 7018=[], 8494=[5732, 6873], 5168=[5089], 7665=[5168, 5089, 5527, 5370], 6260=[], 5366=[], 5370=[5168, 5089]}
+fa_sons:
+{5168=[5089], 9873=[9619, 5366, 9822], 7665=[5527, 5370], 9924=[9873, 8594, 7018, 7436, 8494], 6997=[5020], 9822=[7665, 6808, 6186, 9755]}
+father: 7665	childs: [5527, 5370]  father cluster size:11
+keys merged:	 [YHR190W, YMR202W, YNL280C, YGL001C]
+father: 9822	childs: [7665, 6808, 6186, 9755]  father cluster size:1990
+keys merged:	 [YHR190W, YMR202W, YNL280C, YGL001C, YKL035W, YPR162C, YJL194W, YML065W, YDL042C, YCR004C]
+father: 9873	childs: [9619, 5366, 9822]  father cluster size:3440
+keys merged:	 [YKL006C-A, YOR075W, YGL098W, YPR114W, YHR190W, YMR202W, YNL280C, YGL001C, YKL035W, YPR162C, YJL194W, YML065W, YDL042C, YCR004C]
+father: 9924	childs: [9873, 8594, 7018, 7436, 8494]  father cluster size:4606
+keys merged:	 [YKL006C-A, YOR075W, YGL098W, YPR114W, YHR190W, YMR202W, YNL280C, YGL001C, YKL035W, YPR162C, YJL194W, YML065W, YDL042C, YCR004C, YBR300C, YPR122W, YMR267W, YCR073W-A, YCR020C, YDL110C]
+final steiner tree:
+cluster: 9924	keys: [YKL006C-A, YOR075W, YGL098W, YPR114W, YHR190W, YMR202W, YNL280C, YGL001C, YKL035W, YPR162C, YJL194W, YML065W, YDL042C, YCR004C, YBR300C, YPR122W, YMR267W, YCR073W-A, YCR020C, YDL110C]	nodes size: 4606	weight all: 37	edges size:34
+time for map: 27529
+time for merge: 14046
+0	0
+time now :	41577 ms!!
+
+
+
+
+num: 1	keys: [YML046W, YDL087C, YDR235W, YDR240C, YGL123W, YGL147C, YHL015W, YLR048W, YDR478W, YGR030C, YBR167C, YIR015W, YBL050W, YDL145C, YFR051C, YLR268W, YPL073C, YKL215C, YFR056C, YOR215C]
+clusters:
+{6708=[YFR056C], 6892=[YKL215C], 6256=[YDL087C, YDR235W, YDR240C], 6566=[YDR478W], 5212=[YML046W], 8346=[YGL123W, YGL147C, YHL015W], 5604=[YLR048W], 7394=[YPL073C, YOR215C], 8749=[YBL050W, YDL145C, YFR051C], 7816=[YGR030C, YBR167C, YIR015W], 6859=[YLR268W]}
+time for local   running : 26
+time for local   running : 26
+just 1 key, return.............
+time for local   running : 27
+just 1 key, return.............
+time for local   running : 11
+just 1 key, return.............
+time for local   running : 34
+just 1 key, return.............
+time for local   running : 53
+time for local   running : 79
+just 1 key, return.............
+time for local   running : 17
+time for local   running : 29
+just 1 key, return.............
+time for local   running : 18
+time for local   running : 97
+clu_stru:	{5569=[], 7171=[], 9924=[5569, 7171, 6790, 8775, 7816, 6859, 8336, 9873, 9619, 7255, 8346, 5212, 9822, 7394, 7650, 5604, 6566, 5607, 6892, 8749, 9709, 5934, 6256, 5297, 9073, 6258, 5043, 7540], 6790=[6258], 8775=[5569, 7650, 7171, 5043, 5604, 8346], 7816=[7540, 7255], 6859=[], 8336=[6256, 5607, 5212, 5934], 9873=[5569, 7394, 7650, 7171, 5604, 6790, 8775, 5607, 6859, 6892, 8749, 9709, 5934, 8336, 6256, 5297, 6258, 9619, 5043, 8346, 5212, 9822], 9619=[5297, 6258, 6790, 6859, 8749], 7255=[], 8346=[5569, 7650, 7171, 5043], 5212=[], 9822=[5569, 7650, 7171, 5604, 8775, 5607, 6892, 9709, 5934, 8336, 6256, 5043, 8346, 5212], 7394=[], 7650=[7171, 5043], 5604=[], 6566=[], 5607=[], 6892=[], 8749=[5297, 6258, 6790], 9709=[5569, 7650, 7171, 5043, 5604, 8775, 8346, 6892], 5934=[5607], 6256=[5607, 5934], 5297=[], 9073=[7540, 6566, 7255, 7816], 6258=[], 5043=[], 6708=[], 7540=[]}
+fa_sons:
+{8336=[6256, 5212], 9073=[6566, 7816], 9873=[7394, 9619, 9822], 7650=[5043, 7171], 9619=[6859, 8749], 9924=[9073, 9873], 6790=[6258], 8775=[5604, 8346], 9709=[8775, 6892], 9822=[8336, 9709]}
+father: 8336	childs: [6256, 5212]  father cluster size:27
+keys merged:	 [YDL087C, YDR235W, YDR240C, YML046W]
+father: 9073	childs: [6566, 7816]  father cluster size:12
+keys merged:	 [YDR478W, YGR030C, YBR167C, YIR015W]
+father: 9619	childs: [6859, 8749]  father cluster size:166
+keys merged:	 [YLR268W, YBL050W, YDL145C, YFR051C]
+father: 8775	childs: [5604, 8346]  father cluster size:115
+keys merged:	 [YLR048W, YGL123W, YGL147C, YHL015W]
+father: 9709	childs: [8775, 6892]  father cluster size:792
+keys merged:	 [YLR048W, YGL123W, YGL147C, YHL015W, YKL215C]
+father: 9822	childs: [8336, 9709]  father cluster size:1990
+keys merged:	 [YDL087C, YDR235W, YDR240C, YML046W, YLR048W, YGL123W, YGL147C, YHL015W, YKL215C]
+father: 9873	childs: [7394, 9619, 9822]  father cluster size:3440
+keys merged:	 [YPL073C, YOR215C, YLR268W, YBL050W, YDL145C, YFR051C, YDL087C, YDR235W, YDR240C, YML046W, YLR048W, YGL123W, YGL147C, YHL015W, YKL215C]
+father: 9924	childs: [9073, 9873]  father cluster size:4606
+keys merged:	 [YDR478W, YGR030C, YBR167C, YIR015W, YPL073C, YOR215C, YLR268W, YBL050W, YDL145C, YFR051C, YDL087C, YDR235W, YDR240C, YML046W, YLR048W, YGL123W, YGL147C, YHL015W, YKL215C]
+final steiner tree:
+cluster: 9924	keys: [YDR478W, YGR030C, YBR167C, YIR015W, YPL073C, YOR215C, YLR268W, YBL050W, YDL145C, YFR051C, YDL087C, YDR235W, YDR240C, YML046W, YLR048W, YGL123W, YGL147C, YHL015W, YKL215C]	nodes size: 4606	weight all: 24	edges size:32
+time for map: 222
+time for merge: 9829
+0	0
+time now :	51628 ms!!
+
+
+
+
+num: 3	keys: [YCL025C, YBR068C, YKR093W, YPL265W, YHR183W, YHR063C, YPR033C, YMR217W, YNL183C, YJR066W, YNL229C, YER040W, YLR301W, YLR438W, YLL013C, YER175C, YOR157C, YFR050C, YGR253C, YBL041W]
+clusters:
+{5375=[YBL041W], 8627=[YBR068C, YKR093W], 5469=[YNL183C], 7208=[YLL013C], 8658=[YOR157C, YFR050C, YGR253C], 8867=[YMR217W], 8559=[YJR066W, YNL229C, YER040W], 6646=[YLR301W], 8906=[YLR438W, YER175C], 7295=[YCL025C, YPL265W], 8816=[YHR183W, YHR063C, YPR033C]}
+just 1 key, return.............
+time for local   running : 53
+just 1 key, return.............
+time for local   running : 58
+time for local   running : 61
+just 1 key, return.............
+time for local   running : 72
+time for local   running : 18
+just 1 key, return.............
+time for local   running : 16
+time for local   running : 19
+time for local   running : 55
+time for local   running : 59
+just 1 key, return.............
+time for local   running : 28
+time for local   running : 52
+clu_stru:	{9281=[8816, 5872, 8578, 8658, 8867, 5909, 6168, 8409], 8578=[8409], 6020=[5456], 9924=[9281, 8578, 6020, 6021, 6855, 8906, 9290, 5456, 9873, 8658, 5909, 6168, 8409, 5469, 9822, 8867, 7015, 7208, 8559, 8816, 5872, 9649, 8627, 6646, 5375, 7295], 6021=[], 6855=[], 8906=[], 9290=[8627, 6855, 7015, 7295], 5456=[], 9873=[9281, 8578, 8867, 6020, 6021, 6855, 7015, 8906, 9290, 8559, 5456, 8816, 5872, 9649, 8658, 8627, 5909, 6646, 6168, 8409, 5469, 9822, 7295], 8658=[5872, 5909, 6168], 5909=[], 6168=[5872], 8409=[], 5469=[], 9822=[9281, 8578, 8867, 8906, 8816, 5872, 9649, 8658, 5909, 6646, 6168, 8409, 5469], 8867=[8816, 8578, 8409], 7015=[], 7208=[], 8559=[5456, 6020, 6021], 8816=[8578, 8409], 5872=[], 9649=[8816, 5872, 9281, 8578, 8658, 8867, 5909, 6168, 8409, 5469], 8627=[6855, 7015], 6646=[], 5375=[], 7295=[]}
+fa_sons:
+{9649=[9281, 5469], 9873=[9290, 9822, 8559], 9281=[8658, 8867], 8867=[8816], 6020=[5456], 9924=[9873, 7208, 5375], 6168=[5872], 9290=[8627, 7295], 9822=[9649, 6646, 8906]}
+father: 8867	childs: [8816]  father cluster size:29
+keys merged:	 [YHR183W, YHR063C, YPR033C, YMR217W]
+father: 9290	childs: [8627, 7295]  father cluster size:26
+keys merged:	 [YBR068C, YKR093W, YCL025C, YPL265W]
+father: 9281	childs: [8658, 8867]  father cluster size:98
+keys merged:	 [YOR157C, YFR050C, YGR253C, YHR183W, YHR063C, YPR033C, YMR217W]
+father: 9649	childs: [9281, 5469]  father cluster size:203
+keys merged:	 [YOR157C, YFR050C, YGR253C, YHR183W, YHR063C, YPR033C, YMR217W, YNL183C]
+father: 9822	childs: [9649, 6646, 8906]  father cluster size:1990
+keys merged:	 [YOR157C, YFR050C, YGR253C, YHR183W, YHR063C, YPR033C, YMR217W, YNL183C, YLR301W, YLR438W, YER175C]
+father: 9873	childs: [9290, 9822, 8559]  father cluster size:3440
+keys merged:	 [YBR068C, YKR093W, YCL025C, YPL265W, YOR157C, YFR050C, YGR253C, YHR183W, YHR063C, YPR033C, YMR217W, YNL183C, YLR301W, YLR438W, YER175C, YJR066W, YNL229C, YER040W]
+father: 9924	childs: [9873, 7208, 5375]  father cluster size:4606
+keys merged:	 [YBR068C, YKR093W, YCL025C, YPL265W, YOR157C, YFR050C, YGR253C, YHR183W, YHR063C, YPR033C, YMR217W, YNL183C, YLR301W, YLR438W, YER175C, YJR066W, YNL229C, YER040W, YLL013C, YBL041W]
+final steiner tree:
+cluster: 9924	keys: [YBR068C, YKR093W, YCL025C, YPL265W, YOR157C, YFR050C, YGR253C, YHR183W, YHR063C, YPR033C, YMR217W, YNL183C, YLR301W, YLR438W, YER175C, YJR066W, YNL229C, YER040W, YLL013C, YBL041W]	nodes size: 4606	weight all: 28	edges size:34
+time for map: 231
+time for merge: 10748
+0	0
+time now :	62607 ms!!
+
+
+
+
+num: 4	keys: [YHL010C, YBR035C, YKR071C, YAR027W, YBR069C, YCL025C, YJL156C, YBR068C, YLR207W, YMR297W, YOL013C, YLR450W, YJL198W, YBR296C, YCR098C, YDR428C, YML038C, YCR067C, YPL187W, YDL180W]
+clusters:
+{5064=[YML038C], 9133=[YCR098C, YDR428C], 9497=[YHL010C, YBR035C, YKR071C], 7488=[YAR027W], 7015=[YJL156C, YBR068C], 6146=[YBR296C], 6058=[YDL180W], 5860=[YJL198W], 8125=[YPL187W], 8819=[YBR069C, YCL025C], 6725=[YLR450W], 8507=[YLR207W, YMR297W, YOL013C], 6728=[YCR067C]}
+just 1 key, return.............
+time for local   running : 21
+time for local   running : 32
+time for local   running : 14
+just 1 key, return.............
+time for local   running : 63
+time for local   running : 15
+just 1 key, return.............
+time for local   running : 15
+time for local   running : 64
+just 1 key, return.............
+time for local   running : 107
+just 1 key, return.............
+time for local   running : 17
+just 1 key, return.............
+time for local   running : 102
+time for local   running : 41
+just 1 key, return.............
+time for local   running : 9
+just 1 key, return.............
+time for local   running : 99
+clu_stru:	{7488=[], 6146=[], 5508=[], 9924=[7488, 6146, 5508, 5860, 6725, 8583, 7015, 5064, 9290, 6058, 7467, 5073, 9873, 6833, 8819, 5844, 9497, 9819, 8507, 8125, 6141, 9758, 9439, 7295], 6725=[], 8583=[], 5064=[], 6728=[], 9290=[5073, 8819, 5844, 7015, 7295], 7437=[], 5073=[], 9873=[7488, 6146, 5508, 5860, 6725, 8583, 7015, 9290, 7467, 5073, 6833, 8819, 5844, 9497, 9819, 8507, 6141, 9758, 9439, 7295], 5844=[], 9497=[8583, 7467], 9819=[7488, 5073, 8819, 5844, 7015, 9290, 7295], 9758=[6833, 5508, 6725, 8583, 9497, 7467, 8507, 6141, 9439], 9439=[6833, 5508, 6725, 8507, 6141], 5860=[], 7015=[5073], 8039=[], 6058=[], 7467=[], 9133=[8039, 7437], 6833=[], 8819=[5844, 7295], 8507=[6833, 5508, 6141], 8125=[], 6141=[5508], 7295=[]}
+fa_sons:
+{9873=[6146, 5860, 9819, 9758], 9924=[9873, 5064, 6058, 8125], 9290=[8819, 7015], 9819=[7488, 9290], 6141=[5508], 9758=[9497, 9439], 9439=[6725, 8507]}
+father: 9290	childs: [8819, 7015]  father cluster size:26
+keys merged:	 [YBR069C, YCL025C, YJL156C, YBR068C]
+father: 9819	childs: [7488, 9290]  father cluster size:635
+keys merged:	 [YAR027W, YBR069C, YCL025C, YJL156C, YBR068C]
+father: 9439	childs: [6725, 8507]  father cluster size:24
+keys merged:	 [YLR450W, YLR207W, YMR297W, YOL013C]
+father: 9758	childs: [9497, 9439]  father cluster size:95
+keys merged:	 [YHL010C, YBR035C, YKR071C, YLR450W, YLR207W, YMR297W, YOL013C]
+father: 9873	childs: [6146, 5860, 9819, 9758]  father cluster size:3440
+keys merged:	 [YBR296C, YJL198W, YAR027W, YBR069C, YCL025C, YJL156C, YBR068C, YHL010C, YBR035C, YKR071C, YLR450W, YLR207W, YMR297W, YOL013C]
+father: 9924	childs: [9873, 5064, 6058, 8125]  father cluster size:4606
+keys merged:	 [YBR296C, YJL198W, YAR027W, YBR069C, YCL025C, YJL156C, YBR068C, YHL010C, YBR035C, YKR071C, YLR450W, YLR207W, YMR297W, YOL013C, YML038C, YDL180W, YPL187W]
+final steiner tree:
+cluster: 9924	keys: [YBR296C, YJL198W, YAR027W, YBR069C, YCL025C, YJL156C, YBR068C, YHL010C, YBR035C, YKR071C, YLR450W, YLR207W, YMR297W, YOL013C, YML038C, YDL180W, YPL187W]	nodes size: 4606	weight all: 26	edges size:26
+time for map: 261
+time for merge: 12982
+0	0
+time now :	75850 ms!!
+
+
+
+
+num: 5	keys: [YNR039C, YFR044C, YNL191W, YDR205W, YGR211W, YDR341C, YPR033C, YHR183W, YGL131C, YOL056W, YMR014W, YFL052W, YGL260W, YMR267W, YDR032C, YDR023W, YIL008W, YHR187W, YMR312W, YPL102C]
+clusters:
+{7684=[YHR187W], 5781=[YFR044C, YNL191W], 8874=[YFL052W], 5446=[YNR039C, YDR205W], 7139=[YGL260W], 7425=[YDR032C], 7989=[YMR267W, YDR023W], 8811=[YGL131C, YOL056W, YMR014W], 8867=[YDR341C], 6507=[YIL008W, YMR312W, YPL102C], 8816=[YGR211W, YPR033C, YHR183W]}
+just 1 key, return.............
+time for local   running : 41
+just 1 key, return.............
+time for local   running : 86
+time for local   running : 4
+just 1 key, return.............
+time for local   running : 91
+time for local   running : 59
+time for local   running : 16
+time for local   running : 20
+time for local   running : 67
+just 1 key, return.............
+time for local   running : 189
+time for local   running : 18
+just 1 key, return.............
+time for local   running : 2
+clu_stru:	{7425=[], 8769=[8687], 8578=[5042], 7139=[], 8867=[8816, 8578, 5042], 7684=[5156, 6132, 6507], 5156=[], 9924=[7425, 8769, 8578, 7139, 8867, 7684, 5156, 8874, 7018, 8811, 6507, 9709, 8687, 8816, 5042, 9618, 6132, 5781, 7989, 9822], 5446=[], 8874=[8769, 8811, 8687], 7018=[], 8811=[8769, 8687], 6507=[5156, 6132], 9709=[8816, 7425, 8769, 8578, 5042, 9618, 8867, 8874, 8811, 8687], 8687=[], 8816=[8578, 5042], 5042=[], 9618=[8816, 7425, 8578, 5042, 8867], 6132=[5156], 5781=[], 7989=[7018], 9822=[7425, 8769, 8578, 8867, 7684, 5156, 8874, 8811, 6507, 9709, 8687, 8816, 5042, 9618, 6132]}
+fa_sons:
+{9618=[7425, 8867], 8578=[5042], 8867=[8816], 9924=[7139, 7989, 5781, 9822], 6132=[5156], 7684=[6507], 8874=[8811], 9709=[9618, 8874], 9822=[7684, 9709]}
+father: 8867	childs: [8816]  father cluster size:29
+keys merged:	 [YGR211W, YPR033C, YHR183W, YDR341C]
+father: 7684	childs: [6507]  father cluster size:13
+keys merged:	 [YIL008W, YMR312W, YPL102C, YHR187W]
+father: 8874	childs: [8811]  father cluster size:31
+keys merged:	 [YGL131C, YOL056W, YMR014W, YFL052W]
+father: 9618	childs: [7425, 8867]  father cluster size:165
+keys merged:	 [YDR032C, YGR211W, YPR033C, YHR183W, YDR341C]
+father: 9709	childs: [9618, 8874]  father cluster size:792
+keys merged:	 [YDR032C, YGR211W, YPR033C, YHR183W, YDR341C, YGL131C, YOL056W, YMR014W, YFL052W]
+father: 9822	childs: [7684, 9709]  father cluster size:1990
+keys merged:	 [YIL008W, YMR312W, YPL102C, YHR187W, YDR032C, YGR211W, YPR033C, YHR183W, YDR341C, YGL131C, YOL056W, YMR014W, YFL052W]
+father: 9924	childs: [7139, 7989, 5781, 9822]  father cluster size:4606
+keys merged:	 [YGL260W, YMR267W, YDR023W, YFR044C, YNL191W, YIL008W, YMR312W, YPL102C, YHR187W, YDR032C, YGR211W, YPR033C, YHR183W, YDR341C, YGL131C, YOL056W, YMR014W, YFL052W]
+final steiner tree:
+cluster: 9924	keys: [YGL260W, YMR267W, YDR023W, YFR044C, YNL191W, YIL008W, YMR312W, YPL102C, YHR187W, YDR032C, YGR211W, YPR033C, YHR183W, YDR341C, YGL131C, YOL056W, YMR014W, YFL052W]	nodes size: 4606	weight all: 32	edges size:30
+time for map: 230
+time for merge: 9341
+0	0
+time now :	85421 ms!!
+
+
+
+
+num: 6	keys: [YGL025C, YOL051W, YHR041C, YNR010W, YJL153C, YJR073C, YDR123C, YER026C, YFR054C, YKL035W, YCR004C, YDR312W, YJR133W, YPL073C, YOR215C, YFR056C, YGL157W, YJL214W, YOR032C, YGL026C]
+clusters:
+{6708=[YFR056C], 8110=[YJR133W], 6808=[YKL035W], 6656=[YOL051W], 7634=[YGL025C, YHR041C, YNR010W], 7139=[YFR054C], 7843=[YGL157W], 5546=[YER026C], 9066=[YJL214W, YOR032C], 5956=[YJL153C, YJR073C, YDR123C], 7394=[YPL073C, YOR215C], 9618=[YGL026C, YCR004C, YDR312W]}
+just 1 key, return.............
+time for local   running : 62
+time for local   running : 69
+just 1 key, return.............
+time for local   running : 98
+just 1 key, return.............
+time for local   running : 101
+just 1 key, return.............
+time for local   running : 7
+time for local   running : 26
+just 1 key, return.............
+time for local   running : 74
+just 1 key, return.............
+time for local   running : 1
+time for local   running : 37
+just 1 key, return.............
+time for local   running : 30
+time for local   running : 105
+time for local   running : 213
+clu_stru:	{6656=[], 7425=[], 8258=[7425], 5956=[5148], 6852=[], 7876=[5956, 5546, 5148], 9924=[6656, 7425, 8258, 5956, 6852, 7876, 6087, 6095, 9873, 7634, 9618, 6808, 9755, 5148, 9822, 7394, 7139, 7843, 5546, 9066, 9709, 8110, 8690, 7410, 7994], 6087=[], 6095=[], 9873=[6656, 7425, 8258, 7394, 7843, 6852, 6087, 9066, 9709, 8110, 6095, 7634, 9618, 8690, 7410, 6808, 7994, 9755, 9822], 7634=[6852, 6095], 9618=[7425, 8258, 8690], 6808=[], 9755=[6656, 7425, 8258, 7634, 9618, 8690, 7843, 6852, 7994, 9709, 8110, 6095], 5148=[], 9822=[6656, 7425, 8258, 7843, 6852, 9709, 8110, 6095, 7634, 9618, 8690, 6808, 7994, 9755], 7394=[], 7139=[], 7843=[], 5546=[], 9066=[7410, 6087], 9709=[7425, 8258, 9618, 8690, 8110], 8110=[], 8690=[], 7410=[], 6708=[], 7994=[6656, 7634, 6852, 6095]}
+fa_sons:
+{9873=[7394, 9066, 9822], 8258=[7425], 7876=[5956, 5546], 9924=[9873, 7139, 7876], 7994=[6656, 7634], 9755=[7843, 7994, 9709], 9709=[9618, 8110], 9822=[6808, 9755]}
+father: 7876	childs: [5956, 5546]  father cluster size:6
+keys merged:	 [YJL153C, YJR073C, YDR123C, YER026C]
+father: 7994	childs: [6656, 7634]  father cluster size:20
+keys merged:	 [YOL051W, YGL025C, YHR041C, YNR010W]
+father: 9709	childs: [9618, 8110]  father cluster size:792
+keys merged:	 [YGL026C, YCR004C, YDR312W, YJR133W]
+father: 9755	childs: [7843, 7994, 9709]  father cluster size:1182
+keys merged:	 [YGL157W, YOL051W, YGL025C, YHR041C, YNR010W, YGL026C, YCR004C, YDR312W, YJR133W]
+father: 9822	childs: [6808, 9755]  father cluster size:1990
+keys merged:	 [YKL035W, YGL157W, YOL051W, YGL025C, YHR041C, YNR010W, YGL026C, YCR004C, YDR312W, YJR133W]
+father: 9873	childs: [7394, 9066, 9822]  father cluster size:3440
+keys merged:	 [YPL073C, YOR215C, YJL214W, YOR032C, YKL035W, YGL157W, YOL051W, YGL025C, YHR041C, YNR010W, YGL026C, YCR004C, YDR312W, YJR133W]
+father: 9924	childs: [9873, 7139, 7876]  father cluster size:4606
+keys merged:	 [YPL073C, YOR215C, YJL214W, YOR032C, YKL035W, YGL157W, YOL051W, YGL025C, YHR041C, YNR010W, YGL026C, YCR004C, YDR312W, YJR133W, YFR054C, YJL153C, YJR073C, YDR123C, YER026C]
+final steiner tree:
+cluster: 9924	keys: [YPL073C, YOR215C, YJL214W, YOR032C, YKL035W, YGL157W, YOL051W, YGL025C, YHR041C, YNR010W, YGL026C, YCR004C, YDR312W, YJR133W, YFR054C, YJL153C, YJR073C, YDR123C, YER026C]	nodes size: 4606	weight all: 31	edges size:31
+time for map: 404
+time for merge: 9991
+0	0
+time now :	95816 ms!!
+
+
+
+
+num: 7	keys: [YNR029C, YMR014W, YIR039C, YHR097C, YDR160W, YJL156C, YBR068C, YBR069C, YER067W, YKL090W, YAR027W, YKR071C, YKL070W, YNR013C, YJL055W, YCR098C, YMR157C, YGL236C, YBR185C, YJL147C]
+clusters:
+{7475=[YJL147C], 9133=[YKL070W, YCR098C], 9497=[YER067W, YKL090W, YKR071C], 7015=[YDR160W, YJL156C, YBR068C], 7488=[YAR027W], 9357=[YMR157C, YGL236C, YBR185C], 8874=[YNR029C, YIR039C], 8687=[YMR014W, YHR097C], 8129=[YNR013C], 5844=[YBR069C], 5979=[YJL055W]}
+time for local   running : 17
+time for local   running : 23
+time for local   running : 1
+time for local   running : 23
+just 1 key, return.............
+time for local   running : 9
+time for local   running : 55
+just 1 key, return.............
+time for local   running : 97
+just 1 key, return.............
+time for local   running : 20
+just 1 key, return.............
+time for local   running : 10
+just 1 key, return.............
+time for local   running : 141
+time for local   running : 51
+clu_stru:	{7488=[], 6720=[], 8129=[], 8580=[], 9924=[7488, 6720, 8129, 8737, 8580, 7015, 8874, 9290, 7467, 8683, 9357, 8687, 5073, 9873, 7475, 5844, 6584, 9497, 5979, 9819, 9822], 9290=[5073, 5844, 7015], 9357=[6720, 6584], 7437=[], 5073=[], 9873=[7488, 8129, 8737, 8580, 7015, 8874, 9290, 7467, 8683, 8687, 5073, 5844, 9497, 9819, 9822], 5844=[], 9497=[8737, 7467, 8683], 5979=[], 9819=[7488, 5073, 5844, 7015, 9290], 9822=[8737, 8580, 9497, 8874, 7467, 8683, 8687], 8737=[8683], 7015=[5073], 7144=[], 8874=[8580, 8687], 7467=[], 8683=[], 9133=[7144, 7437], 8687=[8580], 7475=[], 6584=[]}
+fa_sons:
+{9873=[8129, 9819, 9822], 8737=[8683], 9924=[9873, 7475, 5979, 9357], 9290=[5844, 7015], 8874=[8687], 9819=[7488, 9290], 9822=[9497, 8874]}
+father: 9290	childs: [5844, 7015]  father cluster size:26
+keys merged:	 [YBR069C, YDR160W, YJL156C, YBR068C]
+father: 8874	childs: [8687]  father cluster size:31
+keys merged:	 [YMR014W, YHR097C, YNR029C, YIR039C]
+father: 9819	childs: [7488, 9290]  father cluster size:635
+keys merged:	 [YAR027W, YBR069C, YDR160W, YJL156C, YBR068C]
+father: 9822	childs: [9497, 8874]  father cluster size:1990
+keys merged:	 [YER067W, YKL090W, YKR071C, YMR014W, YHR097C, YNR029C, YIR039C]
+father: 9873	childs: [8129, 9819, 9822]  father cluster size:3440
+keys merged:	 [YNR013C, YAR027W, YBR069C, YDR160W, YJL156C, YBR068C, YER067W, YKL090W, YKR071C, YMR014W, YHR097C, YNR029C, YIR039C]
+father: 9924	childs: [9873, 7475, 5979, 9357]  father cluster size:4606
+keys merged:	 [YNR013C, YAR027W, YBR069C, YDR160W, YJL156C, YBR068C, YER067W, YKL090W, YKR071C, YMR014W, YHR097C, YNR029C, YIR039C, YJL147C, YJL055W, YMR157C, YGL236C, YBR185C]
+final steiner tree:
+cluster: 9924	keys: [YNR013C, YAR027W, YBR069C, YDR160W, YJL156C, YBR068C, YER067W, YKL090W, YKR071C, YMR014W, YHR097C, YNR029C, YIR039C, YJL147C, YJL055W, YMR157C, YGL236C, YBR185C]	nodes size: 4606	weight all: 31	edges size:30
+time for map: 215
+time for merge: 20844
+0	0
+time now :	116875 ms!!
+
+
+
+
+num: 8	keys: [YOR369C, YBL092W, YLR185W, YDL191W, YMR267W, YFR054C, YDR032C, YCR004C, YOR271C, YPL264C, YPL107W, YPL224C, YJL147C, YKL137W, YGL236C, YOR037W, YDR478W, YBL018C, YBR257W, YNL221C]
+clusters:
+{7396=[YOR369C], 9353=[YOR271C, YPL264C], 7475=[YJL147C], 9357=[YKL137W, YGL236C], 6566=[YDR478W], 6301=[YPL107W, YPL224C], 5796=[YOR037W], 7698=[YBL018C, YBR257W, YNL221C], 9253=[YBL092W, YLR185W], 7425=[YDR032C, YCR004C], 7018=[YMR267W], 7139=[YFR054C], 6789=[YDL191W]}
+time for local   running : 61
+just 1 key, return.............
+time for local   running : 56
+just 1 key, return.............
+time for local   running : 7
+time for local   running : 83
+just 1 key, return.............
+time for local   running : 96
+time for local   running : 41
+time for local   running : 18
+just 1 key, return.............
+time for local   running : 109
+just 1 key, return.............
+time for local   running : 20
+time for local   running : 160
+time for local   running : 114
+just 1 key, return.............
+time for local   running : 38
+just 1 key, return.............
+time for local   running : 35
+clu_stru:	{6720=[], 7425=[], 9924=[6720, 7425, 6789, 9353, 9357, 7698, 6355, 7385, 9755, 6301, 6814, 7139, 7396, 5796, 8612, 9253, 6566, 7018, 9709, 5678, 9073, 7475, 9720, 8506, 5949], 6789=[], 9353=[8612, 5949], 9357=[6720, 6355], 7698=[7385, 5678], 6355=[], 7385=[5678], 9755=[7425, 7396, 9253, 6789, 8506, 9709, 6814], 6301=[], 6814=[], 7139=[], 7396=[], 5796=[], 8612=[], 9253=[8506, 6814], 6566=[], 7018=[], 9709=[7425, 9253, 8506, 6814], 5678=[], 9073=[7698, 6566, 7385, 5678], 7475=[], 9720=[8612, 9353, 6301, 5949], 8506=[], 5949=[]}
+fa_sons:
+{9073=[7698, 6566], 9924=[9073, 7475, 7139, 5796, 9720, 7018, 9755, 9357], 9720=[9353, 6301], 7385=[5678], 9755=[7396, 6789, 9709], 9709=[7425, 9253]}
+father: 9073	childs: [7698, 6566]  father cluster size:12
+keys merged:	 [YBL018C, YBR257W, YNL221C, YDR478W]
+father: 9720	childs: [9353, 6301]  father cluster size:22
+keys merged:	 [YOR271C, YPL264C, YPL107W, YPL224C]
+father: 9709	childs: [7425, 9253]  father cluster size:792
+keys merged:	 [YDR032C, YCR004C, YBL092W, YLR185W]
+father: 9755	childs: [7396, 6789, 9709]  father cluster size:1182
+keys merged:	 [YOR369C, YDL191W, YDR032C, YCR004C, YBL092W, YLR185W]
+father: 9924	childs: [9073, 7475, 7139, 5796, 9720, 7018, 9755, 9357]  father cluster size:4606
+keys merged:	 [YBL018C, YBR257W, YNL221C, YDR478W, YJL147C, YFR054C, YOR037W, YOR271C, YPL264C, YPL107W, YPL224C, YMR267W, YOR369C, YDL191W, YDR032C, YCR004C, YBL092W, YLR185W, YKL137W, YGL236C]
+final steiner tree:
+cluster: 9924	keys: [YBL018C, YBR257W, YNL221C, YDR478W, YJL147C, YFR054C, YOR037W, YOR271C, YPL264C, YPL107W, YPL224C, YMR267W, YOR369C, YDL191W, YDR032C, YCR004C, YBL092W, YLR185W, YKL137W, YGL236C]	nodes size: 4606	weight all: 43	edges size:32
+time for map: 502
+time for merge: 14790
+0	0
+time now :	132167 ms!!
+
+
+
+
+num: 9	keys: [YFL012W, YMR313C, YDR193W, YKL094W, YDR046C, YCL025C, YBR069C, YPL265W, YOL071W, YER065C, YKL148C, YPL262W, YLR298C, YHR086W, YDL087C, YGR013W, YKL100C, YFR044C, YER180C-A, YDR205W]
+clusters:
+{7222=[YDR193W], 9244=[YMR313C, YKL094W], 5781=[YFR044C], 6256=[YHR086W, YDL087C, YGR013W], 5991=[YKL100C], 6123=[YPL262W], 7157=[YLR298C], 6753=[YER180C-A], 6456=[YFL012W], 9271=[YOL071W, YER065C, YKL148C], 7295=[YCL025C, YPL265W], 5446=[YDR205W], 7726=[YDR046C, YBR069C]}
+just 1 key, return.............
+time for local   running : 21
+just 1 key, return.............
+time for local   running : 16
+just 1 key, return.............
+time for local   running : 70
+just 1 key, return.............
+time for local   running : 35
+time for local   running : 38
+time for local   running : 118
+time for local   running : 134
+just 1 key, return.............
+time for local   running : 33
+time for local   running : 26
+just 1 key, return.............
+time for local   running : 28
+just 1 key, return.............
+time for local   running : 74
+just 1 key, return.............
+time for local   running : 114
+time for local   running : 36
+clu_stru:	{6147=[], 9924=[6753, 6147, 5991, 5607, 7048, 6123, 7726, 5934, 6256, 7504, 9873, 7570, 8819, 5844, 8820, 5781, 7157, 7222, 9271, 6456, 9244, 7295, 8223], 5446=[], 7048=[], 7504=[6147], 9873=[6256, 6753, 8819, 5844, 8820, 7157, 5607, 6456, 7726, 5934, 7295], 7570=[], 5844=[], 5781=[], 9244=[7570, 8223], 8223=[], 6753=[], 5991=[], 5607=[], 6123=[], 7726=[5844], 5934=[5607], 6256=[5607, 5934], 8819=[5844, 7726, 7295], 8820=[6256, 7157, 5607, 5934], 7157=[], 7222=[], 9271=[7504, 6147, 7048], 6456=[], 7295=[]}
+fa_sons:
+{7504=[6147], 9873=[6753, 8819, 8820, 6456], 8819=[7726, 7295], 9924=[9873, 5781, 7222, 9271, 5991, 6123, 9244], 8820=[6256, 7157], 5934=[5607]}
+father: 8819	childs: [7726, 7295]  father cluster size:10
+keys merged:	 [YDR046C, YBR069C, YCL025C, YPL265W]
+father: 8820	childs: [6256, 7157]  father cluster size:50
+keys merged:	 [YHR086W, YDL087C, YGR013W, YLR298C]
+father: 9873	childs: [6753, 8819, 8820, 6456]  father cluster size:3440
+keys merged:	 [YER180C-A, YDR046C, YBR069C, YCL025C, YPL265W, YHR086W, YDL087C, YGR013W, YLR298C, YFL012W]
+father: 9924	childs: [9873, 5781, 7222, 9271, 5991, 6123, 9244]  father cluster size:4606
+keys merged:	 [YER180C-A, YDR046C, YBR069C, YCL025C, YPL265W, YHR086W, YDL087C, YGR013W, YLR298C, YFL012W, YFR044C, YDR193W, YOL071W, YER065C, YKL148C, YKL100C, YPL262W, YMR313C, YKL094W]
+final steiner tree:
+cluster: 9924	keys: [YER180C-A, YDR046C, YBR069C, YCL025C, YPL265W, YHR086W, YDL087C, YGR013W, YLR298C, YFL012W, YFR044C, YDR193W, YOL071W, YER065C, YKL148C, YKL100C, YPL262W, YMR313C, YKL094W]	nodes size: 4606	weight all: 35	edges size:30
+time for map: 329
+time for merge: 19013
+0	0
+time now :	151509 ms!!
+
+
+
+
+num: 10	keys: [YDL193W, YKL140W, YKL094W, YDR193W, YBR257W, YNL221C, YBR167C, YGR030C, YHR086W, YML046W, YDR235W, YBR119W, YBR030W, YLR247C, YGR039W, YGR173W, YML068W, YGR209C, YNL078W, YGR263C]
+clusters:
+{7385=[YBR257W, YNL221C, YBR167C], 7222=[YDR193W], 7540=[YGR030C], 6256=[YHR086W, YDR235W, YBR119W], 8601=[YDL193W, YKL140W, YKL094W], 5212=[YML046W], 5377=[YLR247C], 5543=[YGR039W], 9418=[YML068W, YGR209C], 9649=[YGR263C, YGR173W], 6515=[YBR030W], 5925=[YNL078W]}
+time for local   running : 110
+time for local   running : 73
+just 1 key, return.............
+time for local   running : 13
+time for local   running : 208
+just 1 key, return.............
+time for local   running : 234
+just 1 key, return.............
+time for local   running : 38
+time for local   running : 248
+just 1 key, return.............
+time for local   running : 22
+just 1 key, return.............
+time for local   running : 90
+just 1 key, return.............
+time for local   running : 112
+time for local   running : 53
+just 1 key, return.............
+time for local   running : 82
+clu_stru:	{5377=[], 9924=[7816, 9418, 8336, 9873, 5846, 7255, 7385, 8601, 5212, 9822, 8223, 6050, 6820, 5925, 5543, 5607, 5162, 5102, 5678, 6256, 9649, 6515, 7540, 7222, 5627], 7816=[7540, 7255, 7385, 5678], 9418=[6820, 5162], 8336=[6256, 5607, 5627, 5212], 9873=[6050, 6820, 5925, 5543, 5607, 9418, 5162, 5102, 8336, 6256, 9649, 5627, 5212, 9822], 5846=[], 7255=[5678], 7385=[7255, 5678], 8601=[5846, 8223], 5212=[], 9822=[6256, 8336, 9649, 6050, 5607, 5627, 5212, 5102], 8223=[5846], 6050=[], 6820=[], 5925=[], 5543=[], 5607=[], 5162=[], 5102=[], 5678=[], 6256=[5607, 5627], 9649=[6050, 5102], 6515=[], 7540=[], 7222=[], 5627=[5607]}
+fa_sons:
+{8336=[6256, 5212], 9873=[5925, 5543, 9418, 9822], 9924=[9873, 6515, 7222, 7816, 8601], 7255=[5678], 7816=[7540, 7385], 5627=[5607], 9822=[8336, 9649], 8223=[5846]}
+father: 8336	childs: [6256, 5212]  father cluster size:27
+keys merged:	 [YHR086W, YDR235W, YBR119W, YML046W]
+father: 7816	childs: [7540, 7385]  father cluster size:10
+keys merged:	 [YGR030C, YBR257W, YNL221C, YBR167C]
+father: 9822	childs: [8336, 9649]  father cluster size:1990
+keys merged:	 [YHR086W, YDR235W, YBR119W, YML046W, YGR263C, YGR173W]
+father: 9873	childs: [5925, 5543, 9418, 9822]  father cluster size:3440
+keys merged:	 [YNL078W, YGR039W, YML068W, YGR209C, YHR086W, YDR235W, YBR119W, YML046W, YGR263C, YGR173W]
+father: 9924	childs: [9873, 6515, 7222, 7816, 8601]  father cluster size:4606
+keys merged:	 [YNL078W, YGR039W, YML068W, YGR209C, YHR086W, YDR235W, YBR119W, YML046W, YGR263C, YGR173W, YBR030W, YDR193W, YGR030C, YBR257W, YNL221C, YBR167C, YDL193W, YKL140W, YKL094W]
+final steiner tree:
+cluster: 9924	keys: [YNL078W, YGR039W, YML068W, YGR209C, YHR086W, YDR235W, YBR119W, YML046W, YGR263C, YGR173W, YBR030W, YDR193W, YGR030C, YBR257W, YNL221C, YBR167C, YDL193W, YKL140W, YKL094W]	nodes size: 4606	weight all: 36	edges size:31
+time for map: 604
+time for merge: 17305
+0	0
+time now :	169418 ms!!
+
+
+
+
+num: 11	keys: [YLR080W, YCL076W, YDL110C, YBR261C, YDR463W, YDR160W, YCL025C, YBR068C, YML029W, YBR170C, YBR201W, YGR048W, YGR070W, YOL073C, YKL034W, YOR223W, YPL001W, YEL056W, YHR118C, YDR227W]
+clusters:
+{8993=[YML029W, YBR201W], 9222=[YCL076W, YDL110C, YBR261C], 9755=[YEL056W, YDR227W], 7015=[YDR160W, YBR068C], 6795=[YBR170C, YGR048W], 7762=[YOL073C, YKL034W, YOR223W], 8730=[YPL001W, YHR118C], 7412=[YGR070W], 5975=[YLR080W], 9184=[YDR463W, YCL025C]}
+just 1 key, return.............
+time for local   running : 19
+time for local   running : 36
+time for local   running : 54
+time for local   running : 40
+time for local   running : 60
+just 1 key, return.............
+time for local   running : 98
+time for local   running : 11
+time for local   running : 25765
+time for local   running : 13
+time for local   running : 29
+clu_stru:	{5508=[], 9924=[5508, 9222, 9290, 6795, 5073, 9873, 5333, 7062, 5975, 6807, 6873, 8730, 9755, 9822, 9184, 8993, 5731, 6757, 7015, 6890, 6187, 9324, 6641, 6387, 7295], 9222=[5731, 6873, 6890], 9290=[9184, 5073, 7062, 7015, 7295], 6795=[5333], 5073=[], 9873=[9184, 8993, 5508, 6757, 7015, 9290, 6795, 6187, 9324, 5073, 6641, 6387, 5333, 7062, 6807, 8730, 9755, 9822, 7295], 7762=[6502, 7159], 5333=[], 7062=[], 5975=[], 6807=[], 6873=[], 8730=[6641, 6187], 9755=[6387, 6757], 9822=[8993, 6641, 6387, 5508, 5333, 6757, 6807, 8730, 6795, 9755, 6187, 9324], 9184=[7062, 7295], 8993=[5508, 6807], 5731=[], 6757=[], 6502=[], 7015=[5073], 6890=[6873], 6187=[], 9324=[8993, 5508, 5333, 6807, 6795], 6641=[], 6387=[], 7412=[], 7159=[6502], 7295=[]}
+fa_sons:
+{9873=[9290, 9822], 9924=[9873, 9222, 5975], 7159=[6502], 6890=[6873], 9290=[9184, 7015], 9324=[8993, 6795], 9822=[8730, 9755, 9324]}
+father: 9290	childs: [9184, 7015]  father cluster size:26
+keys merged:	 [YDR463W, YCL025C, YDR160W, YBR068C]
+father: 9324	childs: [8993, 6795]  father cluster size:21
+keys merged:	 [YML029W, YBR201W, YBR170C, YGR048W]
+father: 9822	childs: [8730, 9755, 9324]  father cluster size:1990
+keys merged:	 [YPL001W, YHR118C, YEL056W, YDR227W, YML029W, YBR201W, YBR170C, YGR048W]
+father: 9873	childs: [9290, 9822]  father cluster size:3440
+keys merged:	 [YDR463W, YCL025C, YDR160W, YBR068C, YPL001W, YHR118C, YEL056W, YDR227W, YML029W, YBR201W, YBR170C, YGR048W]
+father: 9924	childs: [9873, 9222, 5975]  father cluster size:4606
+keys merged:	 [YDR463W, YCL025C, YDR160W, YBR068C, YPL001W, YHR118C, YEL056W, YDR227W, YML029W, YBR201W, YBR170C, YGR048W, YCL076W, YDL110C, YBR261C, YLR080W]
+final steiner tree:
+cluster: 9924	keys: [YDR463W, YCL025C, YDR160W, YBR068C, YPL001W, YHR118C, YEL056W, YDR227W, YML029W, YBR201W, YBR170C, YGR048W, YCL076W, YDL110C, YBR261C, YLR080W]	nodes size: 4606	weight all: 21	edges size:30
+time for map: 25827
+time for merge: 7004
+0	0
+time now :	202249 ms!!
+
+
+
+
+num: 12	keys: [YBR119W, YKL012W, YML046W, YDR240C, YIL008W, YNL120C, YPL102C, YGL211W, YDR498C, YCR073W-A, YGL098W, YPL177C, YGR070W, YOR223W, YOL073C, YOR222W, YPL187W, YDR319C, YDL180W, YJL073W]
+clusters:
+{8336=[YBR119W, YML046W, YDR240C], 6058=[YDL180W], 6057=[YDR319C], 5256=[YPL177C], 7412=[YGR070W], 7159=[YOR223W, YOL073C, YOR222W], 6997=[YDR498C, YGL098W], 6248=[YKL012W], 7436=[YCR073W-A], 5924=[YPL102C, YGL211W], 6507=[YNL120C, YIL008W], 9482=[YPL187W, YJL073W]}
+time for local   running : 19
+time for local   running : 22
+time for local   running : 27
+time for local   running : 1
+time for local   running : 1
+just 1 key, return.............
+time for local   running : 21
+just 1 key, return.............
+time for local   running : 28
+just 1 key, return.............
+time for local   running : 13
+just 1 key, return.............
+time for local   running : 69
+just 1 key, return.............
+time for local   running : 0
+just 1 key, return.............
+time for local   running : 36
+time for local   running : 21
+clu_stru:	{5924=[5156], 4996=[], 5156=[], 9924=[5924, 4996, 5156, 5256, 6248, 6057, 6058, 9482, 6507, 5323, 7436, 8336, 6256, 9873, 6997, 9238, 5212, 8125, 9822], 6502=[], 5256=[], 6248=[], 6057=[], 6058=[], 9482=[4996, 8125], 6507=[5924, 5156], 5323=[], 7436=[], 8336=[6256, 5212], 6256=[], 9873=[5924, 5156, 5256, 6248, 6057, 6507, 5323, 8336, 6256, 6997, 9238, 5212, 9822], 7412=[], 6997=[5323], 9238=[8336, 6256, 6248, 5212], 7159=[6502], 5212=[], 8125=[], 9822=[8336, 6256, 5924, 5156, 9238, 6248, 6507, 5212]}
+fa_sons:
+{9873=[6997, 5256, 6057, 9822], 9924=[9873, 9482, 6058, 7436], 9238=[8336, 6248], 6507=[5924], 9822=[9238, 6507]}
+father: 9238	childs: [8336, 6248]  father cluster size:71
+keys merged:	 [YBR119W, YML046W, YDR240C, YKL012W]
+father: 6507	childs: [5924]  father cluster size:11
+keys merged:	 [YPL102C, YGL211W, YNL120C, YIL008W]
+father: 9822	childs: [9238, 6507]  father cluster size:1990
+keys merged:	 [YBR119W, YML046W, YDR240C, YKL012W, YPL102C, YGL211W, YNL120C, YIL008W]
+father: 9873	childs: [6997, 5256, 6057, 9822]  father cluster size:3440
+keys merged:	 [YDR498C, YGL098W, YPL177C, YDR319C, YBR119W, YML046W, YDR240C, YKL012W, YPL102C, YGL211W, YNL120C, YIL008W]
+father: 9924	childs: [9873, 9482, 6058, 7436]  father cluster size:4606
+keys merged:	 [YDR498C, YGL098W, YPL177C, YDR319C, YBR119W, YML046W, YDR240C, YKL012W, YPL102C, YGL211W, YNL120C, YIL008W, YPL187W, YJL073W, YDL180W, YCR073W-A]
+final steiner tree:
+cluster: 9924	keys: [YDR498C, YGL098W, YPL177C, YDR319C, YBR119W, YML046W, YDR240C, YKL012W, YPL102C, YGL211W, YNL120C, YIL008W, YPL187W, YJL073W, YDL180W, YCR073W-A]	nodes size: 4606	weight all: 30	edges size:26
+time for map: 114
+time for merge: 10228
+0	0
+time now :	212591 ms!!
+
+
+
+
+num: 13	keys: [YER157W, YDL058W, YBL050W, YDL145C, YDL052C, YPL168W, YDL193W, YNR040W, YIR017C, YKL001C, YLR303W, YKR069W, YHR062C, YGR030C, YDL141W, YDR478W, YGR211W, YPR033C, YOR187W, YHR183W]
+clusters:
+{6790=[YDL145C], 9057=[YIR017C, YLR303W, YKR069W], 8578=[YGR211W, YOR187W, YHR183W], 8601=[YDL052C, YDL193W], 6456=[YPL168W], 5301=[YKL001C], 6763=[YDL141W], 9073=[YHR062C, YGR030C, YDR478W], 8217=[YNR040W], 6281=[YER157W, YDL058W, YBL050W], 8816=[YPR033C]}
+just 1 key, return.............
+time for local   running : 11
+just 1 key, return.............
+time for local   running : 31
+just 1 key, return.............
+time for local   running : 31
+time for local   running : 39
+time for local   running : 6
+time for local   running : 25
+time for local   running : 35
+just 1 key, return.............
+time for local   running : 41
+just 1 key, return.............
+time for local   running : 82
+just 1 key, return.............
+time for local   running : 66
+time for local   running : 44
+clu_stru:	{8578=[7842, 5042], 9218=[8816, 8578, 7842, 5042, 8217], 9924=[8578, 9218, 6790, 7816, 6281, 6090, 6927, 9873, 6100, 8470, 7768, 8601, 8217, 6745, 9822, 9057, 7842, 6566, 6763, 8749, 9709, 8816, 9073, 5297, 5042, 7540, 5301, 6456], 6790=[], 7816=[7540, 6745], 6281=[5297, 6090], 6090=[5297], 6927=[], 9873=[8578, 9218, 7842, 6790, 6281, 6090, 6763, 8749, 9709, 8816, 5297, 5042, 5301, 6456, 8217, 9822], 6100=[], 8470=[], 7768=[6927], 8601=[8470], 8217=[], 6745=[], 9822=[8816, 8578, 9218, 7842, 5042, 5301, 8217, 6763, 9709], 9057=[6100, 7768, 6927], 7842=[5042], 6566=[], 6763=[], 8749=[5297, 6790, 6281, 6090], 9709=[8816, 8578, 9218, 7842, 5042, 8217, 6763], 8816=[8578, 7842, 5042], 9073=[7540, 6566, 7816, 6745], 5297=[], 5042=[], 7540=[], 5301=[], 6456=[]}
+fa_sons:
+{8816=[8578], 9873=[6456, 8749, 9822], 9218=[8816, 8217], 7842=[5042], 9924=[9073, 9057, 9873, 8601], 7768=[6927], 7816=[7540, 6745], 6090=[5297], 9709=[9218, 6763], 8749=[6790, 6281], 9822=[5301, 9709]}
+father: 8816	childs: [8578]  father cluster size:16
+keys merged:	 [YGR211W, YOR187W, YHR183W, YPR033C]
+father: 9218	childs: [8816, 8217]  father cluster size:72
+keys merged:	 [YGR211W, YOR187W, YHR183W, YPR033C, YNR040W]
+father: 9709	childs: [9218, 6763]  father cluster size:792
+keys merged:	 [YGR211W, YOR187W, YHR183W, YPR033C, YNR040W, YDL141W]
+father: 8749	childs: [6790, 6281]  father cluster size:34
+keys merged:	 [YDL145C, YER157W, YDL058W, YBL050W]
+father: 9822	childs: [5301, 9709]  father cluster size:1990
+keys merged:	 [YKL001C, YGR211W, YOR187W, YHR183W, YPR033C, YNR040W, YDL141W]
+father: 9873	childs: [6456, 8749, 9822]  father cluster size:3440
+keys merged:	 [YPL168W, YDL145C, YER157W, YDL058W, YBL050W, YKL001C, YGR211W, YOR187W, YHR183W, YPR033C, YNR040W, YDL141W]
+father: 9924	childs: [9073, 9057, 9873, 8601]  father cluster size:4606
+keys merged:	 [YHR062C, YGR030C, YDR478W, YIR017C, YLR303W, YKR069W, YPL168W, YDL145C, YER157W, YDL058W, YBL050W, YKL001C, YGR211W, YOR187W, YHR183W, YPR033C, YNR040W, YDL141W, YDL052C, YDL193W]
+final steiner tree:
+cluster: 9924	keys: [YHR062C, YGR030C, YDR478W, YIR017C, YLR303W, YKR069W, YPL168W, YDL145C, YER157W, YDL058W, YBL050W, YKL001C, YGR211W, YOR187W, YHR183W, YPR033C, YNR040W, YDL141W, YDL052C, YDL193W]	nodes size: 4606	weight all: 35	edges size:33
+time for map: 166
+time for merge: 9527
+0	0
+time now :	222284 ms!!
+
+
+
+
+num: 14	keys: [YJL214W, YGL157W, YDR226W, YKL024C, YPL176C, YER180C-A, YFR044C, YNL191W, YOL071W, YPL262W, YBR044C, YJR095W, YJR097W, YLR095C, YKL191W, YBR246W, YDL110C, YCR102W-A, YLR080W, YCL076W]
+clusters:
+{6582=[YJR097W, YKL191W, YBR246W], 9222=[YDL110C, YCR102W-A, YCL076W], 5781=[YFR044C, YNL191W], 9755=[YGL157W, YLR095C], 7476=[YDR226W, YKL024C], 6123=[YPL262W], 7410=[YJL214W], 6753=[YPL176C, YER180C-A], 9271=[YOL071W, YBR044C, YJR095W], 5975=[YLR080W]}
+time for local   running : 27
+time for local   running : 2
+time for local   running : 36
+time for local   running : 47
+just 1 key, return.............
+time for local   running : 53
+time for local   running : 29
+just 1 key, return.............
+time for local   running : 0
+just 1 key, return.............
+time for local   running : 19
+time for local   running : 25607
+time for local   running : 14
+clu_stru:	{7424=[], 6753=[5782], 5731=[], 6147=[], 7843=[], 9924=[7424, 6753, 5731, 6147, 7843, 9222, 6123, 8843, 6061, 8305, 9873, 7410, 7476, 5781, 6582, 5782, 9271, 5975, 5529, 6873, 9755, 9790], 9222=[5731, 6873], 6123=[], 8843=[7424, 6147], 6061=[], 8305=[], 9873=[6753, 7410, 7843, 7476, 5782, 5529, 9755], 7410=[], 7476=[], 5781=[], 6582=[6061], 5782=[], 9271=[7424, 8305, 6147, 8843], 5975=[], 5529=[], 6873=[], 9755=[7843, 5529], 9790=[5731, 5781, 9222, 6873]}
+fa_sons:
+{9873=[6753, 7410, 7476, 9755], 9924=[9873, 6582, 5975, 9271, 6123, 9790], 8843=[7424, 6147], 9790=[5781, 9222]}
+father: 9873	childs: [6753, 7410, 7476, 9755]  father cluster size:3440
+keys merged:	 [YPL176C, YER180C-A, YJL214W, YDR226W, YKL024C, YGL157W, YLR095C]
+father: 9790	childs: [5781, 9222]  father cluster size:55
+keys merged:	 [YFR044C, YNL191W, YDL110C, YCR102W-A, YCL076W]
+father: 9924	childs: [9873, 6582, 5975, 9271, 6123, 9790]  father cluster size:4606
+keys merged:	 [YPL176C, YER180C-A, YJL214W, YDR226W, YKL024C, YGL157W, YLR095C, YJR097W, YKL191W, YBR246W, YLR080W, YOL071W, YBR044C, YJR095W, YPL262W, YFR044C, YNL191W, YDL110C, YCR102W-A, YCL076W]
+final steiner tree:
+cluster: 9924	keys: [YPL176C, YER180C-A, YJL214W, YDR226W, YKL024C, YGL157W, YLR095C, YJR097W, YKL191W, YBR246W, YLR080W, YOL071W, YBR044C, YJR095W, YPL262W, YFR044C, YNL191W, YDL110C, YCR102W-A, YCL076W]	nodes size: 4606	weight all: 33	edges size:36
+time for map: 25687
+time for merge: 13328
+0	0
+time now :	261299 ms!!
+
+
+
+
+num: 15	keys: [YLR381W, YJR135C, YPR046W, YPL018W, YJR073C, YGR097W, YDR497C, YIL090W, YER065C, YKL148C, YJR095W, YPL262W, YLR333C, YOL039W, YDR382W, YDL081C, YPL187W, YDL186W, YJL057C, YDR319C]
+clusters:
+{5519=[YLR333C], 8633=[YDL186W, YJL057C, YDR319C], 6123=[YPL262W], 5036=[YPR046W], 9577=[YJR073C, YGR097W, YIL090W], 8125=[YPL187W], 9271=[YER065C, YKL148C, YJR095W], 5645=[YLR381W, YJR135C, YPL018W], 7172=[YDR497C], 8360=[YOL039W, YDR382W, YDL081C]}
+just 1 key, return.............
+time for local   running : 0
+just 1 key, return.............
+time for local   running : 12
+time for local   running : 17
+just 1 key, return.............
+time for local   running : 7
+time for local   running : 15
+time for local   running : 10
+just 1 key, return.............
+time for local   running : 43
+time for local   running : 2
+just 1 key, return.............
+time for local   running : 56
+time for local   running : 12
+clu_stru:	{7172=[], 9924=[7172, 8646, 5895, 8520, 7048, 6540, 8780, 5645, 5519, 7504, 9873, 5402, 5148, 9822, 5409, 6244, 8360, 9577, 6057, 8361, 6123, 5036, 8305, 5425, 9271, 8633, 8125], 8646=[5409, 5895, 8360, 6540, 5519], 5895=[5409], 8520=[6057], 7048=[], 6540=[], 8780=[6244, 5148], 5645=[5425], 5519=[], 7504=[], 9873=[5409, 7172, 8646, 5895, 8520, 8360, 6057, 8361, 6540, 5036, 5645, 5519, 5425, 8633, 9822], 5402=[], 5148=[], 9822=[5409, 5425, 8646, 5895, 8360, 8361, 6540, 5036, 5645, 5519], 5409=[], 6244=[], 8360=[5409, 5895, 6540], 9577=[6244, 5402, 8780, 5148], 6057=[], 8361=[5425, 5036, 5645], 6123=[], 5036=[], 8305=[7048], 5425=[], 9271=[7504, 8305, 7048], 8633=[8520, 6057], 8125=[]}
+fa_sons:
+{9873=[7172, 8633, 9822], 8305=[7048], 9924=[9873, 9271, 9577, 6123, 8125], 8646=[8360, 5519], 5895=[5409], 8520=[6057], 8361=[5036, 5645], 8780=[6244, 5148], 9822=[8646, 8361]}
+father: 8646	childs: [8360, 5519]  father cluster size:33
+keys merged:	 [YOL039W, YDR382W, YDL081C, YLR333C]
+father: 8361	childs: [5036, 5645]  father cluster size:18
+keys merged:	 [YPR046W, YLR381W, YJR135C, YPL018W]
+father: 9822	childs: [8646, 8361]  father cluster size:1990
+keys merged:	 [YOL039W, YDR382W, YDL081C, YLR333C, YPR046W, YLR381W, YJR135C, YPL018W]
+father: 9873	childs: [7172, 8633, 9822]  father cluster size:3440
+keys merged:	 [YDR497C, YDL186W, YJL057C, YDR319C, YOL039W, YDR382W, YDL081C, YLR333C, YPR046W, YLR381W, YJR135C, YPL018W]
+father: 9924	childs: [9873, 9271, 9577, 6123, 8125]  father cluster size:4606
+keys merged:	 [YDR497C, YDL186W, YJL057C, YDR319C, YOL039W, YDR382W, YDL081C, YLR333C, YPR046W, YLR381W, YJR135C, YPL018W, YER065C, YKL148C, YJR095W, YJR073C, YGR097W, YIL090W, YPL262W, YPL187W]
+final steiner tree:
+cluster: 9924	keys: [YDR497C, YDL186W, YJL057C, YDR319C, YOL039W, YDR382W, YDL081C, YLR333C, YPR046W, YLR381W, YJR135C, YPL018W, YER065C, YKL148C, YJR095W, YJR073C, YGR097W, YIL090W, YPL262W, YPL187W]	nodes size: 4606	weight all: 32	edges size:34
+time for map: 87
+time for merge: 12899
+0	0
+time now :	274285 ms!!
+
+
+
+
+num: 16	keys: [YFR045W, YOR223W, YDL130W-A, YGR066C, YPL168W, YNR040W, YDL193W, YMR313C, YMR022W, YLR207W, YLR450W, YER100W, YOR151C, YGL070C, YGR186W, YDR404C, YER065C, YLL041C, YKL141W, YBR044C]
+clusters:
+{8099=[YFR045W, YGR066C], 6661=[YOR151C, YGL070C, YDR404C], 9244=[YDL193W, YMR313C], 5165=[YGR186W], 9249=[YOR223W, YDL130W-A], 7048=[YER065C], 8843=[YLL041C, YKL141W, YBR044C], 6456=[YPL168W], 8217=[YNR040W], 6725=[YLR450W], 8507=[YMR022W, YLR207W, YER100W]}
+time for local   running : 12
+just 1 key, return.............
+time for local   running : 15
+just 1 key, return.............
+time for local   running : 49
+just 1 key, return.............
+time for local   running : 40
+just 1 key, return.............
+time for local   running : 91
+time for local   running : 110
+time for local   running : 10
+time for local   running : 73
+time for local   running : 81
+just 1 key, return.............
+time for local   running : 1
+time for local   running : 32
+clu_stru:	{7424=[], 6147=[], 9924=[7424, 6147, 6661, 6725, 7783, 7048, 8843, 7692, 5165, 5742, 9873, 7570, 6451, 9271, 6456, 8217, 8601, 9755, 8507, 9244, 6141, 9822, 9439], 6661=[5742], 6725=[], 7048=[], 8843=[7424, 6147, 7692], 7692=[6147], 9873=[6661, 6725, 7783, 5165, 5742, 6451, 6456, 8217, 9755, 8507, 6141, 9822, 9439], 7570=[], 8217=[], 8601=[], 9755=[6661, 7783, 8217, 5165, 5742], 9244=[7570, 8601], 9822=[6451, 6661, 6725, 7783, 8217, 9755, 8507, 5165, 6141, 5742, 9439], 9439=[6451, 6725, 8507, 6141], 7392=[], 9249=[7392, 6502], 8099=[], 6502=[], 7783=[6661, 5165, 5742], 5165=[], 5742=[], 6451=[], 9271=[7424, 6147, 7048, 8843, 7692], 6456=[], 8507=[6451, 6141], 6141=[]}
+fa_sons:
+{9873=[6456, 9822], 9924=[9873, 9271, 9244], 7783=[6661, 5165], 9271=[7048, 8843], 9755=[7783, 8217], 7692=[6147], 9822=[9755, 9439], 9439=[6725, 8507]}
+father: 7783	childs: [6661, 5165]  father cluster size:13
+keys merged:	 [YOR151C, YGL070C, YDR404C, YGR186W]
+father: 9271	childs: [7048, 8843]  father cluster size:15
+keys merged:	 [YER065C, YLL041C, YKL141W, YBR044C]
+father: 9755	childs: [7783, 8217]  father cluster size:1182
+keys merged:	 [YOR151C, YGL070C, YDR404C, YGR186W, YNR040W]
+father: 9439	childs: [6725, 8507]  father cluster size:24
+keys merged:	 [YLR450W, YMR022W, YLR207W, YER100W]
+father: 9822	childs: [9755, 9439]  father cluster size:1990
+keys merged:	 [YOR151C, YGL070C, YDR404C, YGR186W, YNR040W, YLR450W, YMR022W, YLR207W, YER100W]
+father: 9873	childs: [6456, 9822]  father cluster size:3440
+keys merged:	 [YPL168W, YOR151C, YGL070C, YDR404C, YGR186W, YNR040W, YLR450W, YMR022W, YLR207W, YER100W]
+father: 9924	childs: [9873, 9271, 9244]  father cluster size:4606
+keys merged:	 [YPL168W, YOR151C, YGL070C, YDR404C, YGR186W, YNR040W, YLR450W, YMR022W, YLR207W, YER100W, YER065C, YLL041C, YKL141W, YBR044C, YDL193W, YMR313C]
+final steiner tree:
+cluster: 9924	keys: [YPL168W, YOR151C, YGL070C, YDR404C, YGR186W, YNR040W, YLR450W, YMR022W, YLR207W, YER100W, YER065C, YLL041C, YKL141W, YBR044C, YDL193W, YMR313C]	nodes size: 4606	weight all: 21	edges size:26
+time for map: 165
+time for merge: 12843
+0	0
+time now :	287293 ms!!
+
+
+
+
+num: 17	keys: [YGL236C, YPR134W, YJL147C, YFR033C, YFR045W, YDL091C, YOR223W, YOL073C, YDL087C, YHR086W, YGR013W, YLR298C, YNL229C, YDL215C, YPR035W, YER040W, YKL070W, YCR098C, YNR013C, YHR136C]
+clusters:
+{7475=[YJL147C], 9133=[YKL070W, YCR098C], 7232=[YFR045W], 9249=[YDL091C, YOR223W, YOL073C], 6256=[YDL087C, YHR086W, YGR013W], 7157=[YLR298C], 5398=[YPR035W], 9357=[YGL236C, YPR134W, YFR033C], 6799=[YDL215C], 8129=[YNR013C], 8559=[YNL229C, YER040W], 5979=[YHR136C]}
+time for local   running : 27
+time for local   running : 56
+just 1 key, return.............
+time for local   running : 91
+just 1 key, return.............
+time for local   running : 22
+just 1 key, return.............
+time for local   running : 119
+just 1 key, return.............
+time for local   running : 122
+time for local   running : 46
+time for local   running : 26
+time for local   running : 48
+just 1 key, return.............
+time for local   running : 1
+just 1 key, return.............
+time for local   running : 41
+just 1 key, return.............
+time for local   running : 45
+clu_stru:	{7232=[], 8129=[], 9924=[8129, 6021, 9094, 5798, 5607, 9357, 5934, 6799, 8559, 5456, 6256, 9873, 7475, 8820, 7157, 5398, 5815, 5979], 6021=[], 9094=[5798, 5815], 9357=[9094, 5798, 5815], 7437=[], 6799=[], 5456=[], 9873=[5456, 6256, 8129, 8820, 6021, 7157, 5398, 5607, 5934, 8559], 5398=[], 5979=[], 7392=[], 9249=[7392, 6502, 7159], 5798=[], 6502=[], 5607=[], 7144=[], 9133=[7144, 7437], 5934=[5607], 8559=[5456, 6021], 6256=[5607, 5934], 7475=[], 8820=[6256, 7157, 5607, 5934], 7157=[], 5815=[], 7159=[6502]}
+fa_sons:
+{9873=[8129, 8820, 5398, 8559], 9924=[9873, 7475, 5979, 9357, 6799], 8820=[6256, 7157], 9094=[5798, 5815], 7159=[6502], 5934=[5607]}
+father: 8820	childs: [6256, 7157]  father cluster size:50
+keys merged:	 [YDL087C, YHR086W, YGR013W, YLR298C]
+father: 9873	childs: [8129, 8820, 5398, 8559]  father cluster size:3440
+keys merged:	 [YNR013C, YDL087C, YHR086W, YGR013W, YLR298C, YPR035W, YNL229C, YER040W]
+father: 9924	childs: [9873, 7475, 5979, 9357, 6799]  father cluster size:4606
+keys merged:	 [YNR013C, YDL087C, YHR086W, YGR013W, YLR298C, YPR035W, YNL229C, YER040W, YJL147C, YHR136C, YGL236C, YPR134W, YFR033C, YDL215C]
+final steiner tree:
+cluster: 9924	keys: [YNR013C, YDL087C, YHR086W, YGR013W, YLR298C, YPR035W, YNL229C, YER040W, YJL147C, YHR136C, YGL236C, YPR134W, YFR033C, YDL215C]	nodes size: 4606	weight all: 23	edges size:21
+time for map: 305
+time for merge: 11217
+0	0
+time now :	298815 ms!!
+
+
+
+
+num: 18	keys: [YBR121C, YJL214W, YDR226W, YOR032C, YGL015C, YBR007C, YJR133W, YLR255C, YOL017W, YLR172C, YLR095C, YBR246W, YDR436W, YKL088W, YOR329C, YML016C, YHR118C, YPR162C, YEL056W, YDR227W]
+clusters:
+{8322=[YLR172C, YBR246W], 8110=[YJR133W], 9574=[YEL056W, YLR095C], 6641=[YHR118C, YPR162C], 8996=[YBR007C, YLR255C], 7476=[YDR226W], 9701=[YBR121C, YDR227W], 8538=[YDR436W, YKL088W, YML016C], 9066=[YJL214W, YOR032C], 8120=[YOL017W], 9819=[YGL015C, YOR329C]}
+time for local   running : 39
+just 1 key, return.............
+time for local   running : 54
+time for local   running : 57
+time for local   running : 59
+time for local   running : 7
+time for local   running : 12
+just 1 key, return.............
+time for local   running : 19
+just 1 key, return.............
+time for local   running : 49
+time for local   running : 31
+time for local   running : 38
+time for local   running : 1124
+clu_stru:	{6784=[], 8322=[5768, 6061], 9924=[6784, 8322, 6087, 5768, 5071, 9873, 5529, 8538, 6938, 9819, 9755, 9822, 7969, 9701, 6757, 9574, 9066, 6061, 8110, 6641, 7410, 6387, 7476, 6453, 6454, 8120], 6087=[], 5768=[], 5898=[], 5071=[], 7505=[], 9873=[6784, 7969, 9701, 6757, 9574, 6087, 9066, 8110, 5071, 6641, 7410, 6387, 7476, 6453, 6454, 8120, 5529, 8538, 6938, 9819, 9755, 9822], 5529=[], 8538=[7969, 6454, 6938], 6938=[], 9819=[6784, 6453], 9755=[6387, 9701, 6757, 9574, 5529, 8110], 9822=[6641, 6387, 9701, 6757, 9574, 5529, 9755, 8110, 5071], 7969=[6454], 8996=[7505, 5898], 9701=[6387], 6757=[], 9574=[6757, 5529], 9066=[7410, 6087], 6061=[], 8110=[], 6641=[5071], 7410=[], 6387=[], 7476=[], 6453=[], 6454=[], 8120=[]}
+fa_sons:
+{9873=[7476, 8120, 9066, 8538, 9819, 9822], 7969=[6454], 9924=[9873, 8322], 9755=[9701, 9574, 8110], 9822=[6641, 9755]}
+father: 9755	childs: [9701, 9574, 8110]  father cluster size:1182
+keys merged:	 [YBR121C, YDR227W, YEL056W, YLR095C, YJR133W]
+father: 9822	childs: [6641, 9755]  father cluster size:1990
+keys merged:	 [YHR118C, YPR162C, YBR121C, YDR227W, YEL056W, YLR095C, YJR133W]
+father: 9873	childs: [7476, 8120, 9066, 8538, 9819, 9822]  father cluster size:3440
+keys merged:	 [YDR226W, YOL017W, YJL214W, YOR032C, YDR436W, YKL088W, YML016C, YGL015C, YOR329C, YHR118C, YPR162C, YBR121C, YDR227W, YEL056W, YLR095C, YJR133W]
+father: 9924	childs: [9873, 8322]  father cluster size:4606
+keys merged:	 [YDR226W, YOL017W, YJL214W, YOR032C, YDR436W, YKL088W, YML016C, YGL015C, YOR329C, YHR118C, YPR162C, YBR121C, YDR227W, YEL056W, YLR095C, YJR133W, YLR172C, YBR246W]
+final steiner tree:
+cluster: 9924	keys: [YDR226W, YOL017W, YJL214W, YOR032C, YDR436W, YKL088W, YML016C, YGL015C, YOR329C, YHR118C, YPR162C, YBR121C, YDR227W, YEL056W, YLR095C, YJR133W, YLR172C, YBR246W]	nodes size: 4606	weight all: 34	edges size:32
+time for map: 1243
+time for merge: 7900
+0	0
+time now :	307958 ms!!
+
+
+
+
+num: 19	keys: [YDR253C, YGR018C, YLR303W, YNL277W, YDR428C, YJL055W, YBR296C, YER152C, YKL148C, YOL071W, YLL041C, YPL262W, YDR497C, YGL029W, YJL153C, YOL108C, YCL025C, YKR093W, YBR069C, YDR160W]
+clusters:
+{9422=[YGR018C], 8819=[YCL025C, YBR069C], 9057=[YDR253C, YLR303W, YNL277W], 8039=[YDR428C, YER152C], 6146=[YBR296C], 6123=[YPL262W], 9577=[YGL029W, YJL153C, YOL108C], 8627=[YKR093W, YDR160W], 7504=[YKL148C, YOL071W, YLL041C], 7172=[YDR497C], 5979=[YJL055W]}
+time for local   running : 18
+time for local   running : 11
+just 1 key, return.............
+time for local   running : 36
+just 1 key, return.............
+time for local   running : 19
+time for local   running : 16
+just 1 key, return.............
+time for local   running : 55
+time for local   running : 64
+time for local   running : 9
+just 1 key, return.............
+time for local   running : 5
+just 1 key, return.............
+time for local   running : 0
+time for local   running : 45
+clu_stru:	{6146=[], 5059=[], 6147=[], 7172=[], 9924=[9057, 6146, 5059, 6147, 7172, 6855, 9577, 9290, 6123, 6349, 9422, 7504, 5073, 9873, 8819, 8627, 5844, 7768, 9177, 5402, 5979, 9819, 5148, 7295], 6855=[], 9290=[5073, 8819, 8627, 5844, 6855, 7295], 6349=[], 9422=[9057, 5059, 7768], 7504=[6147], 5073=[], 9873=[5073, 6146, 8819, 8627, 7172, 5844, 6855, 9290, 9819, 7295], 5844=[], 7768=[5059], 9177=[5148, 6349], 5402=[], 5979=[], 9819=[5073, 8819, 8627, 7172, 5844, 6855, 9290, 7295], 5148=[], 9057=[5059, 7768], 8039=[7144], 7144=[], 9577=[9177, 5402, 5148, 6349], 6123=[], 8819=[5844, 7295], 8627=[5073, 6855], 7295=[]}
+fa_sons:
+{9873=[6146, 9819], 9924=[7504, 9873, 9577, 6123, 5979, 9422], 7768=[5059], 9177=[5148, 6349], 9290=[8627, 8819], 9819=[7172, 9290], 9422=[9057]}
+father: 9290	childs: [8627, 8819]  father cluster size:26
+keys merged:	 [YKR093W, YDR160W, YCL025C, YBR069C]
+father: 9819	childs: [7172, 9290]  father cluster size:635
+keys merged:	 [YDR497C, YKR093W, YDR160W, YCL025C, YBR069C]
+father: 9422	childs: [9057]  father cluster size:12
+keys merged:	 [YDR253C, YLR303W, YNL277W, YGR018C]
+father: 9873	childs: [6146, 9819]  father cluster size:3440
+keys merged:	 [YBR296C, YDR497C, YKR093W, YDR160W, YCL025C, YBR069C]
+father: 9924	childs: [7504, 9873, 9577, 6123, 5979, 9422]  father cluster size:4606
+keys merged:	 [YKL148C, YOL071W, YLL041C, YBR296C, YDR497C, YKR093W, YDR160W, YCL025C, YBR069C, YGL029W, YJL153C, YOL108C, YPL262W, YJL055W, YDR253C, YLR303W, YNL277W, YGR018C]
+final steiner tree:
+cluster: 9924	keys: [YKL148C, YOL071W, YLL041C, YBR296C, YDR497C, YKR093W, YDR160W, YCL025C, YBR069C, YGL029W, YJL153C, YOL108C, YPL262W, YJL055W, YDR253C, YLR303W, YNL277W, YGR018C]	nodes size: 4606	weight all: 29	edges size:30
+time for map: 122
+time for merge: 11944
+0	0
+time now :	320024 ms!!
+
+
+
+
+num: 20	keys: [YJR133W, YPL073C, YGL015C, YFR056C, YLR073C, YNL078W, YKR058W, YGL243W, YMR267W, YDR312W, YDR032C, YPR114W, YDR071C, YGR207C, YGL094C, YBL066C, YGR239C, YPL112C, YHR150W, YDR142C]
+clusters:
+{6708=[YFR056C], 9740=[YDR071C, YGR207C], 9554=[YGL094C, YBL066C], 5450=[YPL112C], 8809=[YLR073C, YKR058W], 6819=[YGL243W], 9601=[YGL015C, YNL078W], 5366=[YPR114W], 9161=[YGR239C, YDR142C, YMR267W], 6380=[YHR150W], 9709=[YJR133W, YDR312W, YDR032C], 7394=[YPL073C]}
+just 1 key, return.............
+time for local   running : 19
+time for local   running : 30
+just 1 key, return.............
+time for local   running : 40
+just 1 key, return.............
+time for local   running : 9
+time for local   running : 6
+just 1 key, return.............
+time for local   running : 69
+time for local   running : 1
+time for local   running : 51
+time for local   running : 25
+just 1 key, return.............
+time for local   running : 36
+time for local   running : 10415
+just 1 key, return.............
+time for local   running : 101
+clu_stru:	{6784=[], 9601=[6784, 5925], 7425=[], 8258=[7425], 9924=[6784, 9601, 7425, 8258, 9161, 5450, 9740, 9873, 9554, 8146, 9492, 7387, 5852, 9823, 7394, 6819, 5925, 8809, 7018, 6380, 9709, 5362, 5812, 5876, 5366, 5176, 9724], 9161=[5362, 7018], 5450=[], 9740=[7387, 5852], 9873=[6784, 9601, 7425, 8258, 7394, 6819, 5925, 8809, 9709, 9554, 8146, 5812, 5876, 5366, 5176, 9724, 9823], 9554=[8146, 5176], 8146=[], 9492=[5362, 9161, 5450, 7018], 7387=[], 5852=[], 9823=[9554, 8146, 6819, 5812, 5876, 5176, 8809, 9724], 7394=[], 6819=[], 5925=[], 8809=[5812, 5876], 7018=[], 6380=[], 9709=[7425, 8258], 5362=[], 6708=[], 5812=[], 5876=[], 5366=[], 5176=[], 9724=[9554, 8146, 5812, 5876, 5176, 8809]}
+fa_sons:
+{9873=[9601, 7394, 5366, 9709, 9823], 8258=[7425], 9492=[9161, 5450], 9924=[9873, 9492, 6380, 9740], 9724=[9554, 8809], 9823=[6819, 9724]}
+father: 9492	childs: [9161, 5450]  father cluster size:35
+keys merged:	 [YGR239C, YDR142C, YMR267W, YPL112C]
+father: 9724	childs: [9554, 8809]  father cluster size:150
+keys merged:	 [YGL094C, YBL066C, YLR073C, YKR058W]
+father: 9823	childs: [6819, 9724]  father cluster size:243
+keys merged:	 [YGL243W, YGL094C, YBL066C, YLR073C, YKR058W]
+father: 9873	childs: [9601, 7394, 5366, 9709, 9823]  father cluster size:3440
+keys merged:	 [YGL015C, YNL078W, YPL073C, YPR114W, YJR133W, YDR312W, YDR032C, YGL243W, YGL094C, YBL066C, YLR073C, YKR058W]
+father: 9924	childs: [9873, 9492, 6380, 9740]  father cluster size:4606
+keys merged:	 [YGL015C, YNL078W, YPL073C, YPR114W, YJR133W, YDR312W, YDR032C, YGL243W, YGL094C, YBL066C, YLR073C, YKR058W, YGR239C, YDR142C, YMR267W, YPL112C, YHR150W, YDR071C, YGR207C]
+final steiner tree:
+cluster: 9924	keys: [YGL015C, YNL078W, YPL073C, YPR114W, YJR133W, YDR312W, YDR032C, YGL243W, YGL094C, YBL066C, YLR073C, YKR058W, YGR239C, YDR142C, YMR267W, YPL112C, YHR150W, YDR071C, YGR207C]	nodes size: 4606	weight all: 35	edges size:32
+time for map: 10824
+time for merge: 11759
+0	0
+time now :	342607 ms!!
+
+
+
+
+num: 21	keys: [YML065W, YDL042C, YDR227W, YPL001W, YGR066C, YOR222W, YDL091C, YFR045W, YNL094W, YPR171W, YPL249C-A, YDL146W, YDL190C, YMR067C, YBR201W, YBR170C, YDR482C, YNR032C-A, YBR188C, YBR064W]
+clusters:
+{5508=[YBR201W], 7708=[YNR032C-A, YBR188C, YBR064W], 8099=[YGR066C, YFR045W], 9694=[YNL094W, YPL249C-A, YDL146W], 9249=[YOR222W, YDL091C], 9755=[YDL042C, YDR227W], 8730=[YML065W, YPL001W], 5674=[YDR482C], 5159=[YPR171W], 8869=[YDL190C, YMR067C, YBR170C]}
+just 1 key, return.............
+time for local   running : 27
+just 1 key, return.............
+time for local   running : 58
+time for local   running : 88
+just 1 key, return.............
+time for local   running : 66
+time for local   running : 41
+time for local   running : 24
+time for local   running : 64
+time for local   running : 14
+time for local   running : 25588
+time for local   running : 20
+clu_stru:	{5056=[], 7232=[], 5508=[], 9924=[5056, 5508, 6284, 9873, 5333, 6361, 8345, 8730, 9755, 9819, 7708, 9565, 9694, 9822, 8869, 5159, 5351, 5674, 6187, 9324, 6387, 6196, 7093, 5692, 5055], 6284=[], 9873=[5056, 5508, 8869, 5159, 5351, 5674, 6187, 6284, 9324, 6387, 6196, 5333, 7093, 6361, 8345, 8730, 9755, 9819, 7708, 5692, 9565, 9694, 9822, 5055], 5333=[], 6361=[], 8345=[6196, 5351, 5674, 7708], 8730=[6187], 9755=[6387, 6284], 9819=[5056, 5159, 5692, 9565, 9694, 5055], 7708=[6196, 5351], 9565=[5056, 5055], 9694=[5056, 5692, 9565, 5055], 9822=[5508, 8869, 5351, 5674, 6187, 6284, 9324, 6387, 6196, 5333, 7093, 6361, 8345, 8730, 9755, 7708], 7392=[], 9249=[7392, 6502], 8099=[7232], 8869=[5333, 7093, 6361], 6502=[], 5159=[], 5351=[], 5674=[], 6187=[], 9324=[5508, 5333, 8869, 7093, 6361], 6387=[], 6196=[5351], 7093=[6361], 5692=[], 5055=[]}
+fa_sons:
+{9873=[9819, 9822], 9924=[9873], 6196=[5351], 7093=[6361], 8345=[5674, 7708], 9819=[5159, 9694], 9324=[5508, 8869], 9565=[5056, 5055], 9822=[8345, 8730, 9755, 9324]}
+father: 8345	childs: [5674, 7708]  father cluster size:8
+keys merged:	 [YDR482C, YNR032C-A, YBR188C, YBR064W]
+father: 9819	childs: [5159, 9694]  father cluster size:635
+keys merged:	 [YPR171W, YNL094W, YPL249C-A, YDL146W]
+father: 9324	childs: [5508, 8869]  father cluster size:21
+keys merged:	 [YBR201W, YDL190C, YMR067C, YBR170C]
+father: 9822	childs: [8345, 8730, 9755, 9324]  father cluster size:1990
+keys merged:	 [YDR482C, YNR032C-A, YBR188C, YBR064W, YML065W, YPL001W, YDL042C, YDR227W, YBR201W, YDL190C, YMR067C, YBR170C]
+father: 9873	childs: [9819, 9822]  father cluster size:3440
+keys merged:	 [YPR171W, YNL094W, YPL249C-A, YDL146W, YDR482C, YNR032C-A, YBR188C, YBR064W, YML065W, YPL001W, YDL042C, YDR227W, YBR201W, YDL190C, YMR067C, YBR170C]
+father: 9924	childs: [9873]  father cluster size:4606
+hh: []
+4606
+keys merged:	 [YPR171W, YNL094W, YPL249C-A, YDL146W, YDR482C, YNR032C-A, YBR188C, YBR064W, YML065W, YPL001W, YDL042C, YDR227W, YBR201W, YDL190C, YMR067C, YBR170C]
+final steiner tree:
+cluster: 9924	keys: [YPR171W, YNL094W, YPL249C-A, YDL146W, YDR482C, YNR032C-A, YBR188C, YBR064W, YML065W, YPL001W, YDL042C, YDR227W, YBR201W, YDL190C, YMR067C, YBR170C]	nodes size: 3440	weight all: 21	edges size:28
+time for map: 25685
+time for merge: 2541
+0	0
+time now :	370833 ms!!
+
+
+
+
+num: 22	keys: [YFL052W, YOL023W, YMR014W, YJR062C, YPL192C, YMR065W, YOR354C, YEL006W, YDR023W, YDR312W, YKL035W, YDR032C, YGR070W, YKL034W, YDL130W-A, YOR222W, YPR176C, YBL056W, YLR361C, YGR207C]
+clusters:
+{9740=[YPR176C, YBL056W, YGR207C], 6808=[YKL035W], 9249=[YKL034W, YDL130W-A, YOR222W], 8128=[YPL192C, YMR065W, YEL006W], 5772=[YOR354C], 5520=[YLR361C], 8258=[YDR312W, YDR032C], 7412=[YGR070W], 8874=[YFL052W], 8769=[YOL023W, YMR014W, YJR062C], 7989=[YDR023W]}
+time for local   running : 1
+time for local   running : 17
+time for local   running : 26
+just 1 key, return.............
+time for local   running : 32
+just 1 key, return.............
+time for local   running : 24
+time for local   running : 33
+just 1 key, return.............
+time for local   running : 65
+just 1 key, return.............
+time for local   running : 10
+just 1 key, return.............
+time for local   running : 54
+time for local   running : 43
+just 1 key, return.............
+time for local   running : 18
+clu_stru:	{8128=[7125], 8769=[7840, 8687], 7425=[], 8258=[7425], 9924=[8128, 7840, 8769, 7425, 8258, 8874, 5291, 9740, 5772, 9709, 6830, 8687, 5520, 9873, 7125, 7989, 6808, 9656, 7387, 9822], 9740=[9656, 5291, 7387, 6830], 5772=[], 5520=[], 9873=[7840, 5520, 8769, 7425, 8258, 6808, 8874, 9709, 9822, 8687], 7762=[6502], 7125=[], 6808=[], 7387=[], 9822=[7840, 8769, 7425, 8258, 6808, 8874, 9709, 8687], 7392=[], 7840=[], 9249=[7392, 7762, 6502], 6502=[], 8874=[7840, 8769, 8687], 5291=[], 9709=[7840, 8769, 7425, 8258, 8874, 8687], 6830=[], 8687=[7840], 7412=[], 7989=[], 9656=[5291, 7387]}
+fa_sons:
+{9873=[5520, 9822], 7762=[6502], 9924=[8128, 9873, 7989, 5772, 9740], 9656=[7387, 5291], 8874=[8769], 9709=[8258, 8874], 9822=[6808, 9709]}
+father: 8874	childs: [8769]  father cluster size:31
+keys merged:	 [YOL023W, YMR014W, YJR062C, YFL052W]
+father: 9709	childs: [8258, 8874]  father cluster size:792
+keys merged:	 [YDR312W, YDR032C, YOL023W, YMR014W, YJR062C, YFL052W]
+father: 9822	childs: [6808, 9709]  father cluster size:1990
+keys merged:	 [YKL035W, YDR312W, YDR032C, YOL023W, YMR014W, YJR062C, YFL052W]
+father: 9873	childs: [5520, 9822]  father cluster size:3440
+keys merged:	 [YLR361C, YKL035W, YDR312W, YDR032C, YOL023W, YMR014W, YJR062C, YFL052W]
+father: 9924	childs: [8128, 9873, 7989, 5772, 9740]  father cluster size:4606
+keys merged:	 [YPL192C, YMR065W, YEL006W, YLR361C, YKL035W, YDR312W, YDR032C, YOL023W, YMR014W, YJR062C, YFL052W, YDR023W, YOR354C, YPR176C, YBL056W, YGR207C]
+final steiner tree:
+cluster: 9924	keys: [YPL192C, YMR065W, YEL006W, YLR361C, YKL035W, YDR312W, YDR032C, YOL023W, YMR014W, YJR062C, YFL052W, YDR023W, YOR354C, YPR176C, YBL056W, YGR207C]	nodes size: 4606	weight all: 31	edges size:26
+time for map: 161
+time for merge: 10306
+0	0
+time now :	381300 ms!!
+
+
+
+
+num: 23	keys: [YNL143C, YML072C, YLR444C, YBR061C, YDR039C, YHR008C, YDR040C, YDR270W, YOL051W, YLR071C, YER022W, YDR308C, YGR039W, YNL152W, YBR030W, YGR173W, YDL110C, YCL076W, YCR007C, YLR080W]
+clusters:
+{9366=[YGR039W, YNL152W], 6240=[YNL143C], 6441=[YDR040C], 9222=[YDL110C, YCL076W, YCR007C], 6896=[YDR270W], 8150=[YHR008C], 6656=[YOL051W], 6953=[YLR071C, YER022W, YDR308C], 6515=[YBR030W], 5975=[YLR080W], 9819=[YML072C, YLR444C], 9709=[YBR061C, YGR173W], 5704=[YDR039C]}
+just 1 key, return.............
+time for local   running : 18
+time for local   running : 22
+time for local   running : 54
+just 1 key, return.............
+time for local   running : 133
+just 1 key, return.............
+time for local   running : 82
+time for local   running : 138
+just 1 key, return.............
+time for local   running : 32
+just 1 key, return.............
+time for local   running : 50
+just 1 key, return.............
+time for local   running : 163
+just 1 key, return.............
+time for local   running : 101
+time for local   running : 1323
+time for local   running : 6714
+just 1 key, return.............
+time for local   running : 142
+clu_stru:	{6656=[], 9924=[6656, 9222, 5062, 9873, 9366, 8150, 5975, 5593, 6873, 5082, 9819, 9755, 7582, 6240, 6050, 5731, 5732, 5543, 6441, 6953, 9709, 8494, 6515, 6647, 5050, 7994], 9222=[5731, 5732, 6873, 8494], 5062=[], 5704=[], 9873=[6656, 6240, 6050, 5062, 5543, 6441, 6953, 9709, 9366, 8150, 6647, 5593, 5082, 5050, 7994, 9819, 9755, 7582], 9366=[5543, 5050], 8150=[], 5975=[], 5593=[], 6873=[], 5082=[], 9819=[5062, 7582], 9755=[6656, 6050, 6647, 5593, 6953, 5082, 7994, 9709], 7582=[], 6240=[], 6050=[], 5731=[], 5732=[], 5543=[], 6441=[], 6953=[6647, 5593], 9709=[6050, 5082], 8494=[5732, 6873], 6896=[], 6515=[], 6647=[5593], 5050=[], 7994=[6656, 6647, 6953, 5593]}
+fa_sons:
+{9873=[6240, 8150, 9366, 6441, 9755, 9819], 9924=[9873, 6515, 9222, 5975], 6647=[5593], 7994=[6656, 6953], 9755=[7994, 9709], 8494=[5732, 6873]}
+father: 7994	childs: [6656, 6953]  father cluster size:20
+keys merged:	 [YOL051W, YLR071C, YER022W, YDR308C]
+father: 9755	childs: [7994, 9709]  father cluster size:1182
+keys merged:	 [YOL051W, YLR071C, YER022W, YDR308C, YBR061C, YGR173W]
+father: 9873	childs: [6240, 8150, 9366, 6441, 9755, 9819]  father cluster size:3440
+keys merged:	 [YNL143C, YHR008C, YGR039W, YNL152W, YDR040C, YOL051W, YLR071C, YER022W, YDR308C, YBR061C, YGR173W, YML072C, YLR444C]
+father: 9924	childs: [9873, 6515, 9222, 5975]  father cluster size:4606
+keys merged:	 [YNL143C, YHR008C, YGR039W, YNL152W, YDR040C, YOL051W, YLR071C, YER022W, YDR308C, YBR061C, YGR173W, YML072C, YLR444C, YBR030W, YDL110C, YCL076W, YCR007C, YLR080W]
+final steiner tree:
+cluster: 9924	keys: [YNL143C, YHR008C, YGR039W, YNL152W, YDR040C, YOL051W, YLR071C, YER022W, YDR308C, YBR061C, YGR173W, YML072C, YLR444C, YBR030W, YDL110C, YCL076W, YCR007C, YLR080W]	nodes size: 4606	weight all: 46	edges size:29
+time for map: 8357
+time for merge: 14499
+0	0
+time now :	404156 ms!!
+
+
+
+
+num: 24	keys: [YLR450W, YER100W, YDR057W, YML075C, YKL113C, YHR031C, YDL102W, YLR154C, YJR097W, YLR143W, YBR246W, YIL103W, YFR056C, YKL215C, YGL015C, YLR042C, YOL056W, YJL023C, YIR039C, YHR097C]
+clusters:
+{6692=[YML075C], 6708=[YFR056C], 8322=[YJR097W, YBR246W, YIL103W], 6892=[YKL215C], 6784=[YGL015C], 5960=[YKL113C], 8874=[YIR039C], 8648=[YHR031C, YDL102W, YLR154C], 8811=[YOL056W, YJL023C, YHR097C], 7505=[YLR042C], 9439=[YLR450W, YER100W, YDR057W], 9098=[YLR143W]}
+just 1 key, return.............
+time for local   running : 27
+just 1 key, return.............
+time for local   running : 35
+time for local   running : 53
+just 1 key, return.............
+time for local   running : 8
+just 1 key, return.............
+time for local   running : 99
+time for local   running : 8
+time for local   running : 2
+just 1 key, return.............
+time for local   running : 99
+just 1 key, return.............
+time for local   running : 138
+time for local   running : 4
+just 1 key, return.............
+time for local   running : 15
+just 1 key, return.............
+time for local   running : 25
+clu_stru:	{6784=[], 8322=[6060, 6061], 9667=[5793, 5960, 8648, 6073, 7674], 8580=[5113], 9924=[6784, 8322, 9667, 8580, 5960, 8648, 9098, 9873, 9755, 9308, 9822, 9439, 5793, 6692, 8874, 8811, 6892, 6060, 6061, 6834, 6451, 5113, 6073, 7674, 8507], 5960=[], 8648=[5793, 6073, 7674], 9098=[8322, 6060, 6061], 7505=[], 9873=[6784, 5793, 9667, 8580, 6692, 5960, 8648, 8874, 8811, 6892, 6834, 6451, 5113, 6073, 7674, 9755, 8507, 9308, 9822, 9439], 9755=[6692, 8580, 5113, 8874, 8811, 6892, 9308], 9308=[8580, 5113, 8874, 8811, 6892], 9822=[5793, 9667, 8580, 6692, 5960, 8648, 8874, 8811, 6892, 6834, 6451, 5113, 6073, 7674, 9755, 8507, 9308, 9439], 9439=[6834, 6451, 8507], 5793=[], 6692=[], 8874=[8580, 5113, 8811], 8811=[8580, 5113], 6892=[], 6060=[], 6061=[], 6834=[], 6451=[], 6708=[], 5113=[], 6073=[], 7674=[5793], 8507=[6834, 6451]}
+fa_sons:
+{9873=[6784, 9822], 9667=[8648, 5960], 9924=[9873, 9098], 8580=[5113], 9098=[8322], 7674=[5793], 8874=[8811], 9755=[6692, 9308], 8507=[6834, 6451], 9308=[8874, 6892], 9822=[9667, 9755, 9439]}
+father: 9667	childs: [8648, 5960]  father cluster size:122
+keys merged:	 [YHR031C, YDL102W, YLR154C, YKL113C]
+father: 9098	childs: [8322]  father cluster size:8
+keys merged:	 [YJR097W, YBR246W, YIL103W, YLR143W]
+father: 8874	childs: [8811]  father cluster size:31
+keys merged:	 [YOL056W, YJL023C, YHR097C, YIR039C]
+father: 9308	childs: [8874, 6892]  father cluster size:47
+keys merged:	 [YOL056W, YJL023C, YHR097C, YIR039C, YKL215C]
+father: 9755	childs: [6692, 9308]  father cluster size:1182
+keys merged:	 [YML075C, YOL056W, YJL023C, YHR097C, YIR039C, YKL215C]
+father: 9822	childs: [9667, 9755, 9439]  father cluster size:1990
+keys merged:	 [YHR031C, YDL102W, YLR154C, YKL113C, YML075C, YOL056W, YJL023C, YHR097C, YIR039C, YKL215C, YLR450W, YER100W, YDR057W]
+father: 9873	childs: [6784, 9822]  father cluster size:3440
+keys merged:	 [YGL015C, YHR031C, YDL102W, YLR154C, YKL113C, YML075C, YOL056W, YJL023C, YHR097C, YIR039C, YKL215C, YLR450W, YER100W, YDR057W]
+father: 9924	childs: [9873, 9098]  father cluster size:4606
+keys merged:	 [YGL015C, YHR031C, YDL102W, YLR154C, YKL113C, YML075C, YOL056W, YJL023C, YHR097C, YIR039C, YKL215C, YLR450W, YER100W, YDR057W, YJR097W, YBR246W, YIL103W, YLR143W]
+final steiner tree:
+cluster: 9924	keys: [YGL015C, YHR031C, YDL102W, YLR154C, YKL113C, YML075C, YOL056W, YJL023C, YHR097C, YIR039C, YKL215C, YLR450W, YER100W, YDR057W, YJR097W, YBR246W, YIL103W, YLR143W]	nodes size: 4606	weight all: 28	edges size:29
+time for map: 315
+time for merge: 5170
+0	0
+time now :	409641 ms!!
+
+
+
+
+num: 25	keys: [YHR118C, YLR442C, YPL001W, YDL042C, YHR111W, YPL101W, YMR312W, YNL119W, YBR069C, YDR160W, YDR046C, YKR093W, YOL119C, YOR339C, YPR127W, YPL264C, YBR201W, YBR170C, YFL044C, YKL213C]
+clusters:
+{6818=[YNL119W], 5508=[YBR201W], 8908=[YPR127W, YPL264C], 6132=[YHR111W, YPL101W, YMR312W], 9755=[YLR442C, YDL042C], 8730=[YHR118C, YPL001W], 7090=[YBR170C, YFL044C, YKL213C], 8627=[YDR160W, YKR093W], 9180=[YOL119C, YOR339C], 7726=[YBR069C, YDR046C]}
+time for local   running : 19
+time for local   running : 27
+time for local   running : 21
+time for local   running : 49
+just 1 key, return.............
+time for local   running : 79
+time for local   running : 38
+just 1 key, return.............
+time for local   running : 16
+time for local   running : 76
+time for local   running : 9
+time for local   running : 27510
+clu_stru:	{5508=[], 9924=[5508, 6855, 9353, 9290, 8908, 6284, 5073, 9873, 5202, 5844, 5333, 6488, 8730, 9755, 9180, 9822, 5919, 6818, 6187, 9324, 7726, 5873, 7090, 8627, 6132, 6908, 5949], 6855=[], 9353=[6488, 8908, 9180, 6908, 5949, 5919], 9290=[5073, 8627, 5844, 6855, 7726], 8908=[5949, 5919], 6284=[], 5073=[], 9873=[6818, 5508, 6855, 9290, 6187, 6284, 9324, 7726, 5073, 5873, 5202, 7090, 8627, 5844, 6132, 5333, 8730, 9755, 9822], 5202=[], 5844=[], 5333=[], 6488=[], 8730=[6187], 9755=[5202, 6284], 9180=[6488, 6908], 9822=[5873, 5202, 6818, 7090, 5508, 6132, 5333, 8730, 9755, 6187, 6284, 9324], 5919=[], 6818=[5873, 6132], 6187=[], 9324=[7090, 5508, 5333], 7726=[5844], 5873=[], 7090=[5333], 8627=[5073, 6855], 6132=[5873], 6908=[], 5949=[]}
+fa_sons:
+{9873=[9290, 9822], 6818=[6132], 9924=[9873, 9353], 9353=[9180, 8908], 9290=[8627, 7726], 9324=[7090, 5508], 9822=[6818, 8730, 9755, 9324]}
+father: 6818	childs: [6132]  father cluster size:12
+keys merged:	 [YHR111W, YPL101W, YMR312W, YNL119W]
+father: 9353	childs: [9180, 8908]  father cluster size:13
+keys merged:	 [YOL119C, YOR339C, YPR127W, YPL264C]
+father: 9290	childs: [8627, 7726]  father cluster size:26
+keys merged:	 [YDR160W, YKR093W, YBR069C, YDR046C]
+father: 9324	childs: [7090, 5508]  father cluster size:21
+keys merged:	 [YBR170C, YFL044C, YKL213C, YBR201W]
+father: 9822	childs: [6818, 8730, 9755, 9324]  father cluster size:1990
+keys merged:	 [YHR111W, YPL101W, YMR312W, YNL119W, YHR118C, YPL001W, YLR442C, YDL042C, YBR170C, YFL044C, YKL213C, YBR201W]
+father: 9873	childs: [9290, 9822]  father cluster size:3440
+keys merged:	 [YDR160W, YKR093W, YBR069C, YDR046C, YHR111W, YPL101W, YMR312W, YNL119W, YHR118C, YPL001W, YLR442C, YDL042C, YBR170C, YFL044C, YKL213C, YBR201W]
+father: 9924	childs: [9873, 9353]  father cluster size:4606
+keys merged:	 [YDR160W, YKR093W, YBR069C, YDR046C, YHR111W, YPL101W, YMR312W, YNL119W, YHR118C, YPL001W, YLR442C, YDL042C, YBR170C, YFL044C, YKL213C, YBR201W, YOL119C, YOR339C, YPR127W, YPL264C]
+final steiner tree:
+cluster: 9924	keys: [YDR160W, YKR093W, YBR069C, YDR046C, YHR111W, YPL101W, YMR312W, YNL119W, YHR118C, YPL001W, YLR442C, YDL042C, YBR170C, YFL044C, YKL213C, YBR201W, YOL119C, YOR339C, YPR127W, YPL264C]	nodes size: 4606	weight all: 27	edges size:37
+time for map: 27641
+time for merge: 5447
+0	0
+time now :	442729 ms!!
+
+
+tm3-tm2:	442729 ms!!
+
+
+end....		 not all: 25 		 null: []

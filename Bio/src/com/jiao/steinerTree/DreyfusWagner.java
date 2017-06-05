@@ -128,14 +128,18 @@ public class DreyfusWagner {
 
 	public ArrayList<String> RunDreyfusWagner1(Set<Integer> N, Set<Integer> Y,
 			double Dis[][],HashMap<Integer, String> jkey,double adj[][]) {
+		//////////  nodes set, keys set,  shortest matrix, nodes map,   adjesment matrix
 		HashMap<HashMap<Set<Integer>, Integer>, Integer> arr = new HashMap<HashMap<Set<Integer>, Integer>, Integer>();
 		HashMap<HashMap<Set<Integer>, Integer>, HashMap<Set<Integer>, Integer>> arr2 = new HashMap<HashMap<Set<Integer>, Integer>, HashMap<Set<Integer>, Integer>>();
 		HashMap<HashMap<Set<Integer>, Integer>, HashMap<Set<Integer>, Integer>> arr3 = new HashMap<HashMap<Set<Integer>, Integer>, HashMap<Set<Integer>, Integer>>();
 		long startTime = System.currentTimeMillis();
 		int q = Y.iterator().next();
-		Y.remove(q);
+		Y.remove(q);     
 		Set<Integer> C = Y;
-//		System.out.println("q:"+q+"\tC:"+C);
+//		System.out.println("q:"+q+"\tY:"+Y+"\tN:"+N);
+//		System.out.println("dis:" + Dis.length +"\t adj: "+adj.length+" jkey:"+jkey.size() +"\n"+jkey );
+//		System.out.println("drey fus wagner:\n"+ N.size()+"\t"+Y.size()+"\n"+ Dis.length+" "+jkey.size()+" "+adj.length);
+		
 		HashMap<HashMap<Set<Integer>, Integer>, Double> S = new HashMap<HashMap<Set<Integer>, Integer>, Double>();
 		for (int t : C) {
 			for (int J : N) {

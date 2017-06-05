@@ -3,8 +3,8 @@ package main;
 import java.io.Serializable;
 
 public class st_edge implements Serializable {
-	String beg;
-	String end;
+	public String beg;
+	public String end;
 	public int weight;
 	public  st_edge(String beg,String end,int weight){
 		this.beg = beg;

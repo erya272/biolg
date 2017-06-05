@@ -23,9 +23,9 @@ public class TreeSerializable implements Serializable{
 	 * ent3:Child_parents
 	 * 
 	 */
-	HashMap<String, ArrayList<String>> ent1 = new HashMap<String, ArrayList<String>>();
-	HashMap<String, ArrayList<String>> ent2 = new HashMap<String, ArrayList<String>>();
-	HashMap<String, String> ent3 = new HashMap<String,String>();
+	public HashMap<String, ArrayList<String>> ent1 = new HashMap<String, ArrayList<String>>();
+	public HashMap<String, ArrayList<String>> ent2 = new HashMap<String, ArrayList<String>>();
+	public HashMap<String, String> ent3 = new HashMap<String,String>();
 	
 	private static HashMap<String, ArrayList<String>> init1() {
 		Logger.debug("load data from db...", TreeSerializable.class);
@@ -50,7 +50,7 @@ public class TreeSerializable implements Serializable{
 		ConstructTermTree sct =new ConstructTermTree();
 		tpc = sct.DataPreparing(basepath+"tree.csv");
 		Logger.debug("load data from db done!", TreeSerializable.class);
-		System.out.println("here");
+//		System.out.println("here");
 		return tpc.getChild_parents();
 	}
 	

@@ -14,6 +14,19 @@ import scala.Tuple2;
 public class justfortest {
 
 	public static void main(String[] args) {
+		
+		/*		JavaRDD<String> lines = sc.textFile("data.txt"); //hdfs://user/lee/
+		System.out.println("hello world");
+		JavaRDD<Integer> lineLengths = lines.map(new Function<String, Integer>() {
+		  public Integer call(String s) { 
+			  return s.length(); }
+		});
+		int totalLength = lineLengths.reduce(new Function2<Integer, Integer, Integer>() {
+		  public Integer call(Integer a, Integer b) { return a + b; }
+		});		
+		System.out.println("\ntotallength:\t"+totalLength);*/
+		
+		
 		// TODO Auto-generated method stub
 /*	    String[] arrayA = new String[] { "1", "2", "3", "3", "4", "5" };        
 	    String[] arrayB = new String[] { "3", "4", "4", "5", "6", "7" };                

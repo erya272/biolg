@@ -109,6 +109,7 @@ public class FindCorrespondingHierarchy {
 					}
 				}
 			}
+			
 			if (!keys.isEmpty())
 				mark.put(s, keys);
 		}
@@ -245,14 +246,17 @@ public class FindCorrespondingHierarchy {
 //		System.out.println("Cluster containing keywords:"
 //				+ res.getClusterContainKey());
 		
-		System.out.println("res:\t"+res.index+" "+res.root+" "+ res.clusterContainKey.size()+"\t" +res.clusterContainKey+" "+res.indexContent.size());
+//		System.out.println("res:\t"+res.index+" "+res.root+" "+ res.clusterContainKey.size()+"\t" +res.clusterContainKey+" "+res.indexContent.size());
 //		System.out.println(res.clusterContainKey.size());		
 		
 		long beg = System.currentTimeMillis();				
-				
+		
+		///
+		long t1 = System.currentTimeMillis();
 		ArrayList<String> STres = ApplayDreyfus(res);
+//		System.out.println("time for local:"+(System.currentTimeMillis()-t1));
 //		System.out.println(System.currentTimeMillis()-beg);
-		System.out.println("STres: -------" + STres + "-------");
+//		System.out.println("STres: -------" + STres + "-------");
 		
 		HashMap<String, ArrayList<String>> map = res.getClusterContainKey();
 		ArrayList<String> path = getHeirarchyPath(pr, map, STres, root, dis,
@@ -275,6 +279,7 @@ public class FindCorrespondingHierarchy {
 
 	public ArrayList<String> ApplayDreyfus(HierarcyBackForFindResults res) {
 		// 通过求出来的层次结果，对该层次进行应用ST,求出该层次的ST树。
+//		long tmt = System.currentTimeMillis();
 		String Disfile = path + res.getRoot() + "/" + res.getIndex() + "/"
 				+ "disMatrix.csv";
 		String adjfile = path + res.getRoot() + "/" + res.getIndex() + "/"
@@ -286,6 +291,8 @@ public class FindCorrespondingHierarchy {
 		HashMap<String, Integer> keyj = new HashMap<String, Integer>();
 		keyj = dfs.getKeyj();
 		double[][] adj = spr.ReadAdjMatrix(adjfile, jkey, keyj);
+//		System.out.println("time for prapre: "+ (System.currentTimeMillis() - tmt)  ); //// + Disfile +" \t"+ adjfile
+		
 		Set<Integer> N = new HashSet<Integer>();
 		Set<Integer> Y = new HashSet<Integer>();
 		int len = Dis.length;
@@ -293,13 +300,15 @@ public class FindCorrespondingHierarchy {
 			N.add(i);
 		}
 		HashMap<String, ArrayList<String>> map = res.getClusterContainKey();
+//		System.out.println("map:\t" + map );
 		Set<String> set = map.keySet();
 		Iterator<String> it = set.iterator();
 		while (it.hasNext()) {
 			String key = it.next();
 			Y.add(keyj.get(key));
 		}
-		System.out.println("run:\t"+N.size() + " "+Y.size()); ////  +" "+map.size()+map  
+//		System.out.println("run:\t"+N.size() + " "+Y.size()); ////  +" "+map.size()+map  
+//		System.out.println("Y:\t"+Y);
 		return st.RunDreyfusWagner1(N, Y, Dis, jkey, adj);
 		// 这里可以返回ArrayList，包含边的
 	}
